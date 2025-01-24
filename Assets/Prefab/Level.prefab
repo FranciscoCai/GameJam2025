@@ -139,7 +139,7 @@ MonoBehaviour:
   stayTime: 15
   SpawnPoint: {fileID: 3770037777995289797}
   Enemy: {fileID: 6219769180113516547, guid: 8ea21cb0814dfcb43bc17821c6bf76db, type: 3}
-  Obstacle: {fileID: 983275408669139835}
+  Obstacle: {fileID: 3580970340322050476, guid: aa345036a44ee9445820466202b8e2af, type: 3}
 --- !u!1 &1270621785697448932
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 6162483240974388501}
   - component: {fileID: 40363796757869582}
   - component: {fileID: 4484308101593087874}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TriggerVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}

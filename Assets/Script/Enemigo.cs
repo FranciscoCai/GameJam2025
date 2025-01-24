@@ -14,13 +14,12 @@ public class Enemigo : MonoBehaviour
     {
         _agent = GetComponent<NavMeshAgent>();
         _player = GameObject.FindWithTag("Player").transform;
-        _agent.SetDestination(_player.position);
         
     }
     private void OnEnable()
     {
-        GameManager.instance.modoAtaque2 += CambioQuieto;
-        GameManager.instance.modoAtaque1 += CambioVolver;
+        //GameManager.instance.modoAtaque2 += CambioQuieto;
+        //GameManager.instance.modoAtaque1 += CambioVolver;
     }
     private void OnDisable()
     {
@@ -46,6 +45,6 @@ public class Enemigo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        _agent.SetDestination(_player.position);
     }
 }
