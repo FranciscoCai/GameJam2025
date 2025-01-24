@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
     public delegate void CambioModo();
     public CambioModo modoAtaque2;
     public CambioModo modoAtaque1;
-    void Awake()
+    private void Awake()
     {
         if (instance == null)
         {
@@ -21,13 +21,13 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyUp(KeyCode.Escape))
-        {
-            modoAtaque2();
-        }
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            modoAtaque1();
-        }
+        //if(Input.GetKeyUp(KeyCode.Escape))
+        //{
+        //    modoAtaque2();
+        //}
+        //if (Input.GetKeyUp(KeyCode.Space))
+        //{
+        //    modoAtaque1();
+        //}
     }
 }
