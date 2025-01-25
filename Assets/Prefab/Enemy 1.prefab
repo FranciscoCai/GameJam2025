@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8910654693800566799}
   - component: {fileID: 3608979180323088895}
   - component: {fileID: 1867346679550969158}
+  - component: {fileID: 6811902777489414124}
   m_Layer: 0
   m_Name: Enemy 1
   m_TagString: Enemigo
@@ -76,7 +77,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1
-  m_BaseOffset: 0.5
+  m_BaseOffset: 1.1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &8910654693800566799
@@ -91,14 +92,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a60b4220e2256e4ab546051c536d9cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeUntilAttack: 0
-  countdownDuration: 0
-  pumpDuration: 0
+  timeUntilAttack: 3
+  countdownDuration: 1
+  pumpDuration: 0.5
   _player: {fileID: 0}
   textoCompleto:
   - zzz
   - xxx
   - yyy
+  orSprite: {fileID: 0}
+  newSprite: {fileID: 21300000, guid: c0f7bab6cbeb85d4fb8bae95d84bc542, type: 3}
 --- !u!95 &3608979180323088895
 Animator:
   serializedVersion: 7
@@ -165,14 +168,27 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: c53689362d8080e4fb6af2f62f2710dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 14.639999, y: 24.515715}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6811902777489414124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6219769180113516547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad20b9b7884b3d14d9a241c76a059729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flipInterval: 0.25
