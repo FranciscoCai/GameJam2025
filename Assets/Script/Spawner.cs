@@ -24,7 +24,7 @@ public class Spawner : MonoBehaviour
         {
             if (RandomNumber(66))
             {
-                Instantiate(Enemy, enemySpawnPoints[i].transform.position, Quaternion.identity);
+                Instantiate(Enemy, enemySpawnPoints[i].transform.position, Quaternion.Euler(0, 180, 0));
             }
         }
         Transform[] obstacleSpawnPoints = levelData.ObstacleSpawnPoints;
@@ -32,7 +32,7 @@ public class Spawner : MonoBehaviour
         {
             if (RandomNumber(66))
             {
-                Instantiate(Obstacle, obstacleSpawnPoints[i].transform.position, Quaternion.identity);
+                Instantiate(Obstacle, obstacleSpawnPoints[i].transform.position, Quaternion.Euler(0, 180, 0));
             }
         }
         _isSpawned = true;
