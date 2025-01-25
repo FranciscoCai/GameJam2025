@@ -9,7 +9,7 @@ public class Enemigo : MonoBehaviour
 {
     EstadoEnemigo eEnemy;
     private NavMeshAgent _agent;
-    private Transform _player;
+    public Transform _player;
     void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
@@ -18,8 +18,8 @@ public class Enemigo : MonoBehaviour
     }
     private void OnEnable()
     {
-        //GameManager.instance.modoAtaque2 += CambioQuieto;
-        //GameManager.instance.modoAtaque1 += CambioVolver;
+        GameManager.instance.modoAtaque2 += CambioQuieto;
+        GameManager.instance.modoAtaque1 += CambioVolver;
     }
     private void OnDisable()
     {
@@ -45,6 +45,5 @@ public class Enemigo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _agent.SetDestination(_player.position);
     }
 }
