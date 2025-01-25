@@ -7,8 +7,8 @@ public class Acercamiento : MonoBehaviour
 {
     public float detectionRange;
     public float fadeSpeed;
-    public GameObject playerCam;
-    public GameObject battleCam;
+    public Camera playerCam;
+    public Camera battleCam;
     public Image image;
 
 
@@ -72,12 +72,12 @@ public class Acercamiento : MonoBehaviour
 
         if (battleCam != null)
         {
-            battleCam.SetActive(true);
+            battleCam.enabled = true;
         }
 
         if (playerCam != null)
         {
-            playerCam.SetActive(false);
+            battleCam.enabled = false; ;
         }
 
         while (image.color.a > 0f)
