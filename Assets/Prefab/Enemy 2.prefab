@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8910654693800566799}
   - component: {fileID: 3608979180323088895}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Enemy 2
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,14 +145,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a60b4220e2256e4ab546051c536d9cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeUntilAttack: 3
-  countdownDuration: 2
-  pumpDuration: 1
   _player: {fileID: 0}
   textoCompleto:
-  - Yo soy cani
-  - cani cani cani
-  - yo cANI SOY
+  - zzz
+  - xxx
+  - yyy
 --- !u!95 &3608979180323088895
 Animator:
   serializedVersion: 7
