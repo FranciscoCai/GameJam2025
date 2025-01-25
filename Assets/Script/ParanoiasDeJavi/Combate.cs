@@ -17,6 +17,9 @@ public class Combate : MonoBehaviour
     public GameObject battleCam;
 
     public DialogoCombate dialogoCombate;
+
+    public AudioSource overworld;
+    public AudioSource theme;
     
     private void OnEnable()
     {

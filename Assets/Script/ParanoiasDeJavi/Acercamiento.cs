@@ -34,6 +34,7 @@ public class Acercamiento : MonoBehaviour
                 NpcManager.Instance.textoCompleto = target.GetComponent<Enemigo>().textoCompleto;
                 NpcManager.Instance.orSprite = target.GetComponent<Enemigo>().orSprite;
                 NpcManager.Instance.newSprite = target.GetComponent<Enemigo>().newSprite;
+                NpcManager.Instance.sountrack = target.GetComponent<Enemigo>().soudtrack;
                 Destroy(target);
             }
 

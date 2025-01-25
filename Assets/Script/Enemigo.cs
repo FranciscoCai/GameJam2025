@@ -17,6 +17,7 @@ public class Enemigo : MonoBehaviour
     public string[] textoCompleto;
     [HideInInspector]public Sprite orSprite;
     public Sprite newSprite;
+    public AudioSource soudtrack;
 
     void Start()
     {

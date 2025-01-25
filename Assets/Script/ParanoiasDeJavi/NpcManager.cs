@@ -9,6 +9,7 @@ public class NpcManager : MonoBehaviour
     public string[] textoCompleto;
     public Sprite orSprite;
     public Sprite newSprite;
+    public AudioSource sountrack;
 
     private void Awake()
     {
