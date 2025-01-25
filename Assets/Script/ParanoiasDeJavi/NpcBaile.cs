@@ -18,15 +18,14 @@ public class NpcBaile : MonoBehaviour
     {
         originalScale = transform.localScale;
         spriteRenderer = GetComponent<SpriteRenderer>();
-
-        orSprite = NpcManager.Instance.orSprite;
-        newSprite = NpcManager.Instance.newSprite;
     }
     private void OnEnable()
     {
         timeUntilAttack = NpcManager.Instance.timeUntilAttack;
         countdownDuration = NpcManager.Instance.countdownDuration;
         pumpDuration = NpcManager.Instance.pumpDuration;
+        orSprite = NpcManager.Instance.orSprite;
+        newSprite = NpcManager.Instance.newSprite;
         StartCoroutine(CountdownRoutine());
     }
 
