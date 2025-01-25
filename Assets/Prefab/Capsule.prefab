@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2bf1c3479d0f1343a3fa2483a724290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRange: 2
+  detectionRange: 1.25
   fadeSpeed: 2
   playerCam: {fileID: 6815391974487413262}
   battleCam: {fileID: 0}
