@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 923742827802639918}
   - component: {fileID: 2378574380573338993}
   - component: {fileID: 279722467988739206}
+  - component: {fileID: 6174452822631449766}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,9 +171,36 @@ MonoBehaviour:
   detectionRange: 3
   fadeSpeed: 2
   playerCam: {fileID: 8648345559455404666}
-  battleCam: {fileID: 8648345559455404666}
+  battleCam: {fileID: 0}
   image: {fileID: 0}
   target: {fileID: 0}
+--- !u!54 &6174452822631449766
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3724228664889479051}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &8519751438440863704
 GameObject:
   m_ObjectHideFlags: 0

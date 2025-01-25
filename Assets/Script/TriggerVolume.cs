@@ -10,6 +10,7 @@ public class TriggerVolume : MonoBehaviour
         if(other.TryGetComponent(out CharacterController player) && !HasEnter)
         {
             OnEnter.Invoke(player.gameObject);
+            Destroy(gameObject);
         }
     }
 }
