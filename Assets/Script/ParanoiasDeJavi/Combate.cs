@@ -89,6 +89,7 @@ public class Combate : MonoBehaviour
 
     IEnumerator Return()
     {
+        AudioManager.Instances.CrossfadeAudio(theme, overworld, 1.5f, 1.5f);
         Color color = image.color;
         color.a = 0f;
         image.color = color;
