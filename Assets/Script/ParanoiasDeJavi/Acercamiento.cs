@@ -30,6 +30,10 @@ public class Acercamiento : MonoBehaviour
                 StartCoroutine(FadeCoroutine());
                 Destroy(target);
             }
+
+            NpcManager.Instance.timeUntilAttack = target.GetComponent<Enemigo>().timeUntilAttack;
+            NpcManager.Instance.countdownDuration = target.GetComponent<Enemigo>().countdownDuration;
+            NpcManager.Instance.pumpDuration = target.GetComponent<Enemigo>().pumpDuration;
         }
     }
 

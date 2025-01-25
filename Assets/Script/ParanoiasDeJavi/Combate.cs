@@ -4,24 +4,26 @@ using UnityEngine.UI;
 
 public class Combate : MonoBehaviour
 {
-    public float timeUntilAttack;
-    public float countdownDuration;
-    public float reactionTime;
+    [SerializeField] private float timeUntilAttack;
+    [SerializeField] private float countdownDuration;
+    [SerializeField] private float reactionTime;
 
     private string requiredKey;
     private bool waitingForInput = false;
 
     public Image image;
+    public Image textImage;
     public float fadeSpeed;
     public Camera playerCam;
     public GameObject battleCam;
 
     public DialogoCombate dialogoCombate;
-    void Start()
-    {
-    }
+    
     private void OnEnable()
     {
+        timeUntilAttack = NpcManager.Instance.timeUntilAttack;
+        countdownDuration = NpcManager.Instance.countdownDuration;
+        reactionTime = NpcManager.Instance.pumpDuration;
         StartCoroutine(StartCombat());
     }
     IEnumerator StartCombat()
@@ -29,6 +31,7 @@ public class Combate : MonoBehaviour
         GameManager.instance.modoAtaque = true;
         dialogoCombate.bocadillo.SetActive(true);
         StartCoroutine(dialogoCombate.MostrarTextoPocoAPoco());
+        textImage.enabled = true;
         while (true) 
         {
             yield return new WaitForSeconds(timeUntilAttack);

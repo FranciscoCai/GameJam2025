@@ -7,6 +7,9 @@ public enum EstadoEnemigo
 }
 public class Enemigo : MonoBehaviour
 {
+    public float timeUntilAttack;
+    public float countdownDuration;
+    public float pumpDuration;
     EstadoEnemigo eEnemy;
     private NavMeshAgent _agent;
     public Transform _player;

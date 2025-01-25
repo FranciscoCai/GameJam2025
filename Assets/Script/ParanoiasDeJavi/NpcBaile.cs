@@ -5,8 +5,8 @@ public class NpcBaile : MonoBehaviour
 {
     public float timeUntilAttack;
     public float countdownDuration;
-    public float actionDuration;
     public float pumpDuration;
+    public float actionDuration;
     public float pumpScaleFactor;
     private Sprite orSprite;
     public Sprite newSprite;
@@ -14,13 +14,19 @@ public class NpcBaile : MonoBehaviour
     private Vector3 originalScale;
     private SpriteRenderer spriteRenderer;
 
-    void Start()
+    void Awake()
     {
         originalScale = transform.localScale;
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         orSprite = spriteRenderer.sprite;
 
+    }
+    private void OnEnable()
+    {
+        timeUntilAttack = NpcManager.Instance.timeUntilAttack;
+        countdownDuration = NpcManager.Instance.countdownDuration;
+        pumpDuration = NpcManager.Instance.pumpDuration;
         StartCoroutine(CountdownRoutine());
     }
 
@@ -40,14 +46,14 @@ public class NpcBaile : MonoBehaviour
             {
                 spriteRenderer.sprite = newSprite;
             }
-            yield return new WaitForSeconds(actionDuration);
+            yield return new WaitForSeconds(pumpDuration);
         }
     }
 
     IEnumerator PumpEffect()
     {
         transform.localScale = originalScale * pumpScaleFactor;
-        yield return new WaitForSeconds(pumpDuration);
+        yield return new WaitForSeconds(actionDuration);
         transform.localScale = originalScale;
     }
 }
