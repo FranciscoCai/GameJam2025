@@ -1062,14 +1062,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 279722467988739206, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
-      propertyPath: image
-      value: 
-      objectReference: {fileID: 519769543}
-    - target: {fileID: 279722467988739206, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
-      propertyPath: canvas
-      value: 
-      objectReference: {fileID: 157442506}
-    - target: {fileID: 279722467988739206, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 0}
@@ -1077,10 +1069,6 @@ PrefabInstance:
       propertyPath: battleCam
       value: 
       objectReference: {fileID: 801573181}
-    - target: {fileID: 279722467988739206, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
-      propertyPath: playerCam
-      value: 
-      objectReference: {fileID: 401637157}
     - target: {fileID: 2226651798307922149, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1125,6 +1113,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5933502802875417619, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: m_Name
+      value: Bocadillo
+      objectReference: {fileID: 0}
     - target: {fileID: 6318883271302707173, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
       propertyPath: rotationA.y
       value: -10
@@ -1138,7 +1130,8 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6159096759808263698, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
@@ -1357,7 +1350,7 @@ SceneRoots:
   - {fileID: 307390873}
   - {fileID: 1082524725}
   - {fileID: 459770334}
-  - {fileID: 1298435817}
   - {fileID: 836697042}
   - {fileID: 801573185}
   - {fileID: 623826296}
+  - {fileID: 1298435817}

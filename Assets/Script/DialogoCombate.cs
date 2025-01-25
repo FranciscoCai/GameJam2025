@@ -7,6 +7,7 @@ public class DialogoCombate : MonoBehaviour
     public TextMeshProUGUI textoUI;  // Referencia al componente TextMeshProUGUI (para UI)
     public string[] textoCompleto;
     public float tiempoEntreLetras = 0.1f;  // Tiempo entre cada letra
+    public GameObject bocadillo;
 
 
     public IEnumerator MostrarTextoPocoAPoco()

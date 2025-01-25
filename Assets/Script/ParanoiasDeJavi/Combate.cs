@@ -27,6 +27,7 @@ public class Combate : MonoBehaviour
     IEnumerator StartCombat()
     {
         GameManager.instance.modoAtaque = true;
+        dialogoCombate.bocadillo.SetActive(true);
         StartCoroutine(dialogoCombate.MostrarTextoPocoAPoco());
         while (true) 
         {
@@ -78,7 +79,8 @@ public class Combate : MonoBehaviour
         Color color = image.color;
         color.a = 0f;
         image.color = color;
-
+        dialogoCombate.textoUI.text = "";
+        dialogoCombate.bocadillo.SetActive(false);
         while (color.a < 1f) // Cambié `<=` por `<` para evitar loops infinitos
         {
             color.a += fadeSpeed * Time.deltaTime;
