@@ -136,7 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _levels:
   - {fileID: 983275408669139835}
-  stayTime: 15
+  stayTime: 25
   SpawnPoint: {fileID: 3770037777995289797}
   Enemy:
   - {fileID: 6219769180113516547, guid: 8ea21cb0814dfcb43bc17821c6bf76db, type: 3}
