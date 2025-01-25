@@ -163,7 +163,8 @@ MonoBehaviour:
   stayTime: 25
   SpawnPoint: {fileID: 3770037777995289797}
   Enemy:
-  - {fileID: 6219769180113516547, guid: 8ea21cb0814dfcb43bc17821c6bf76db, type: 3}
+  - {fileID: 6219769180113516547, guid: 293b9801f49ea004ca747e33d8a39bc0, type: 3}
+  - {fileID: 6219769180113516547, guid: dd7f7a6ae282bf9478caada049a85859, type: 3}
   Obstacle:
   - {fileID: 8708514233607495175, guid: 0b095ef7293d884449b90d72e8d06b88, type: 3}
   - {fileID: 3628850178633406755, guid: f2bbe7f31c7d10148a9ccbe8ff1137cb, type: 3}
