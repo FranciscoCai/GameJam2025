@@ -20,8 +20,11 @@ public class Enemigo : MonoBehaviour
     }
     private void OnEnable()
     {
-        GameManager.instance.modoAtaque2 += CambioQuieto;
-        GameManager.instance.modoAtaque1 += CambioVolver;
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.modoAtaque2 += CambioQuieto;
+            GameManager.instance.modoAtaque1 += CambioVolver;
+        }
     }
     private void OnDisable()
     {
