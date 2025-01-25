@@ -309,9 +309,9 @@ MonoBehaviour:
   fadeSpeed: 2
   playerCam: {fileID: 6815391974487413262}
   battleCam: {fileID: 0}
-  image: {fileID: 0}
+  image: {fileID: 3174163665789812938}
   target: {fileID: 0}
-  canvas: {fileID: 0}
+  canvas: {fileID: 908025036460145886}
 --- !u!54 &6174452822631449766
 Rigidbody:
   m_ObjectHideFlags: 0
