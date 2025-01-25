@@ -12,6 +12,7 @@ public class Combate : MonoBehaviour
 
     void Start()
     {
+        GameManager.instance.modoAtaque = true;
         StartCoroutine(StartCombat());
     }
 
@@ -61,4 +62,6 @@ public class Combate : MonoBehaviour
         }
         Debug.Log("¡GO!");
     }
+
+
 }

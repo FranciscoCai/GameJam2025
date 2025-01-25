@@ -2071,7 +2071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilAttack: 2
   countdownDuration: 2.5
-  reactionTime: 0.75
+  reactionTime: 0.4
 --- !u!20 &1684667966 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 6815391974487413262, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}

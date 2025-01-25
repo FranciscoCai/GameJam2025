@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     public delegate void CambioModo();
     public CambioModo modoAtaque2;
     public CambioModo modoAtaque1;
+    public bool modoAtaque;
     private void Awake()
     {
         if (instance == null)

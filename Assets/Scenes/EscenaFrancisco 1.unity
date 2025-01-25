@@ -250,6 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b828ccd9476f5d43978e71dd4d6c9d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  modoAtaque: 0
 --- !u!4 &307390873
 Transform:
   m_ObjectHideFlags: 0
@@ -598,11 +599,11 @@ GameObject:
   m_Component:
   - component: {fileID: 801573185}
   - component: {fileID: 801573184}
-  - component: {fileID: 801573183}
   - component: {fileID: 801573182}
   - component: {fileID: 801573186}
+  - component: {fileID: 801573187}
   m_Layer: 0
-  m_Name: Camera (1)
+  m_Name: Combat Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -652,14 +653,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!81 &801573183
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 801573181}
-  m_Enabled: 1
 --- !u!20 &801573184
 Camera:
   m_ObjectHideFlags: 0
@@ -741,6 +734,20 @@ MonoBehaviour:
   timeUntilAttack: 2
   countdownDuration: 2
   reactionTime: 1
+--- !u!114 &801573187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801573181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e62013ed417063f4b8cd18d546e000c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetImage: {fileID: 1477218111}
+  shrinkSpeed: 25
 --- !u!1 &836697036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,7 +1166,7 @@ PrefabInstance:
     - target: {fileID: 279722467988739206, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
       propertyPath: battleCam
       value: 
-      objectReference: {fileID: 801573184}
+      objectReference: {fileID: 801573181}
     - target: {fileID: 279722467988739206, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
       propertyPath: playerCam
       value: 
@@ -1208,6 +1215,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6318883271302707173, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: rotationA.y
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318883271302707173, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: rotationD.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318883271302707173, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1250,9 +1269,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: 387}
-  m_SizeDelta: {x: 1010, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 890.7246, y: 387}
+  m_SizeDelta: {x: 1000, y: 100}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1477218111
 MonoBehaviour:
   m_ObjectHideFlags: 0
