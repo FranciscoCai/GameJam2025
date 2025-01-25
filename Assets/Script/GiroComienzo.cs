@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class GiroComienzo : MonoBehaviour
@@ -8,6 +9,10 @@ public class GiroComienzo : MonoBehaviour
     [SerializeField] private CharacterController characterController;
     [SerializeField] private GameObject barraVida;
     [SerializeField] private GameObject play;
+    public TextMeshProUGUI textoUI;
+    public GameObject Dialogo;
+    public string textoCompleto;
+    public float tiempoEntreLetras = 0.1f;  // Tiempo entre cada letra
     void Start()
     {
 
@@ -20,6 +25,17 @@ public class GiroComienzo : MonoBehaviour
     }
     public void EmpezarCorutina()
     {
+        StartCoroutine(DialogoMadre());
+    }
+    public IEnumerator DialogoMadre()
+    {
+        Dialogo.SetActive(true);
+        textoUI.text = "";  // Asegurarse de que el texto comience vac¨ªo
+        foreach (char letra in textoCompleto)
+        {
+            textoUI.text += letra;  // Agregar la letra al texto mostrado
+            yield return new WaitForSeconds(tiempoEntreLetras);  // Esperar antes de agregar la siguiente letra
+        }
         StartCoroutine(RotarGradualmente(-90));
     }
     private IEnumerator RotarGradualmente(float angulo)
@@ -48,5 +64,6 @@ public class GiroComienzo : MonoBehaviour
         playerMov.enabled = true;
         acercamiento.enabled = true;
         barraVida.SetActive(true);
+        Dialogo.SetActive(false);
     }
 }
