@@ -1234,6 +1234,8 @@ MonoBehaviour:
   playerCam: {fileID: 401637157}
   battleCam: {fileID: 801573181}
   dialogoCombate: {fileID: 157442506}
+  overworld: {fileID: 0}
+  theme: {fileID: 0}
 --- !u!114 &801573187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1744,6 +1746,7 @@ MonoBehaviour:
   textoCompleto: []
   orSprite: {fileID: 0}
   newSprite: {fileID: 0}
+  sountrack: {fileID: 0}
 --- !u!4 &1106326403
 Transform:
   m_ObjectHideFlags: 0
