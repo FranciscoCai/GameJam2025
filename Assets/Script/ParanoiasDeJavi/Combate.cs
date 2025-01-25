@@ -12,7 +12,6 @@ public class Combate : MonoBehaviour
     private bool waitingForInput = false;
 
     public Image image;
-    public Image textImage;
     public float fadeSpeed;
     public Camera playerCam;
     public GameObject battleCam;
@@ -31,7 +30,6 @@ public class Combate : MonoBehaviour
         GameManager.instance.modoAtaque = true;
         dialogoCombate.bocadillo.SetActive(true);
         StartCoroutine(dialogoCombate.MostrarTextoPocoAPoco());
-        textImage.enabled = true;
         while (true) 
         {
             yield return new WaitForSeconds(timeUntilAttack);
