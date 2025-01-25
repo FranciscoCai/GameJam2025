@@ -2,6 +2,7 @@ using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 using UnityEngine.UI;
 using System.Collections;
+using Unity.VisualScripting.Antlr3.Runtime.Tree;
 
 public class Acercamiento : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class Acercamiento : MonoBehaviour
     private string enemyTag = "Enemigo";
     public GameObject target;
     [SerializeField] private DialogoCombate canvas;
+
+    public AudioSource overworld;
+    public AudioSource theme;
 
     void Update()
     {
@@ -34,7 +38,6 @@ public class Acercamiento : MonoBehaviour
                 NpcManager.Instance.textoCompleto = target.GetComponent<Enemigo>().textoCompleto;
                 NpcManager.Instance.orSprite = target.GetComponent<Enemigo>().orSprite;
                 NpcManager.Instance.newSprite = target.GetComponent<Enemigo>().newSprite;
-                NpcManager.Instance.sountrack = target.GetComponent<Enemigo>().soudtrack;
                 Destroy(target);
             }
 
@@ -62,6 +65,7 @@ public class Acercamiento : MonoBehaviour
     }
     private IEnumerator FadeCoroutine()
     {
+        AudioManager.Instances.CrossfadeAudio(overworld, theme, 1.5f, 1.5f);
         if (GameManager.instance.modoAtaque2 != null)
         {
             GameManager.instance.modoAtaque2();
@@ -84,7 +88,7 @@ public class Acercamiento : MonoBehaviour
         {
             battleCam.SetActive(true);
         }
-
+        
         if (playerCam != null)
         {
             playerCam.enabled = false; ;
