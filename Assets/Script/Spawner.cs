@@ -36,7 +36,8 @@ public class Spawner : MonoBehaviour
             if (RandomNumber(66))
             {
                 int randomObstacle = Random.Range(0,Obstacle.Length);
-                GameObject toInstance = Instantiate(Obstacle[randomObstacle], obstacleSpawnPoints[i].transform.position, Quaternion.Euler(0, 180, 0));
+                Quaternion rotation = Obstacle[randomObstacle].transform.rotation;
+                GameObject toInstance = Instantiate(Obstacle[randomObstacle], obstacleSpawnPoints[i].transform.position, rotation);
                 toInstance.transform.SetParent(gameObject.transform);
             }
         }

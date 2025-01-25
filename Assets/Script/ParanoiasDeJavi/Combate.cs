@@ -40,15 +40,24 @@ public class Combate : MonoBehaviour
 
             waitingForInput = true;
             float timer = 0f;
-
+            bool isEnter = false;
             while (timer < reactionTime)
             {
-                if (Input.GetKeyDown(requiredKey))
+                if (Input.anyKeyDown)
                 {
-                    Debug.Log("✅ ¡Correcto!");
-                    waitingForInput = false;
-                    yield return Return();
-                    yield break;
+                    if (Input.GetKeyDown(requiredKey) && !isEnter)
+                    {
+                        isEnter = true;
+                        Debug.Log("✅ ¡Correcto!");
+                        waitingForInput = false;
+                        yield return Return();
+                        yield break;
+                    }
+                    else
+                    {
+                        isEnter = true;
+                        Debug.Log("❌ Fallaste");
+                    }
                 }
                 timer += Time.deltaTime;
                 yield return null;
