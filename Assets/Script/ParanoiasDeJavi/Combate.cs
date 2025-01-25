@@ -16,6 +16,7 @@ public class Combate : MonoBehaviour
     public Camera playerCam;
     public GameObject battleCam;
 
+    public DialogoCombate dialogoCombate;
     void Start()
     {
     }
@@ -26,6 +27,7 @@ public class Combate : MonoBehaviour
     IEnumerator StartCombat()
     {
         GameManager.instance.modoAtaque = true;
+        StartCoroutine(dialogoCombate.MostrarTextoPocoAPoco());
         while (true) 
         {
             yield return new WaitForSeconds(timeUntilAttack);

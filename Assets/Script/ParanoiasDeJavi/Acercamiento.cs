@@ -14,6 +14,7 @@ public class Acercamiento : MonoBehaviour
 
     private string enemyTag = "Enemigo";
     public GameObject target;
+    [SerializeField] private DialogoCombate canvas;
 
     void Update()
     {
@@ -25,6 +26,7 @@ public class Acercamiento : MonoBehaviour
 
             if (distance <= detectionRange)
             {
+                canvas.textoCompleto = target.GetComponent<Enemigo>().textoCompleto;
                 StartCoroutine(FadeCoroutine());
                 Destroy(target);
             }

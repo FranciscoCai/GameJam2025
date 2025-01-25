@@ -11,6 +11,7 @@ public class Enemigo : MonoBehaviour
     private NavMeshAgent _agent;
     public Transform _player;
     private Animator _animator;
+    public string[] textoCompleto;
     void Start()
     {
         _agent = GetComponent<NavMeshAgent>();

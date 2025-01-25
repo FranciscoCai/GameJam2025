@@ -146,6 +146,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
+  textoCompleto:
+  - zzz
+  - xxx
+  - yyy
 --- !u!95 &3608979180323088895
 Animator:
   serializedVersion: 7
