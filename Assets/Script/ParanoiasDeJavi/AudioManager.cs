@@ -3,13 +3,13 @@ using System.Collections;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager Instance;
+    public static AudioManager Instances;
 
     private void Awake()
     {
-        if (Instance == null)
+        if (Instances == null)
         {
-            Instance = this;
+            Instances = this;
         }
         else
         {
