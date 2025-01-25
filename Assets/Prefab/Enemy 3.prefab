@@ -101,7 +101,7 @@ MonoBehaviour:
   - xxx
   - yyy
   orSprite: {fileID: 0}
-  newSprite: {fileID: 21300000, guid: c0f7bab6cbeb85d4fb8bae95d84bc542, type: 3}
+  newSprite: {fileID: 21300000, guid: f4fa5f6c404b9d545a6d9d96d9a71ea4, type: 3}
 --- !u!95 &3608979180323088895
 Animator:
   serializedVersion: 7
@@ -168,7 +168,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c53689362d8080e4fb6af2f62f2710dd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8d9a988a91f11e4b98b0431fc6d246c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

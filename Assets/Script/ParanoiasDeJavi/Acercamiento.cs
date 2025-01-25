@@ -28,15 +28,15 @@ public class Acercamiento : MonoBehaviour
             {
                 canvas.textoCompleto = target.GetComponent<Enemigo>().textoCompleto;
                 StartCoroutine(FadeCoroutine());
+                NpcManager.Instance.timeUntilAttack = target.GetComponent<Enemigo>().timeUntilAttack;
+                NpcManager.Instance.countdownDuration = target.GetComponent<Enemigo>().countdownDuration;
+                NpcManager.Instance.pumpDuration = target.GetComponent<Enemigo>().pumpDuration;
+                NpcManager.Instance.textoCompleto = target.GetComponent<Enemigo>().textoCompleto;
+                NpcManager.Instance.orSprite = target.GetComponent<Enemigo>().orSprite;
+                NpcManager.Instance.newSprite = target.GetComponent<Enemigo>().newSprite;
                 Destroy(target);
             }
 
-            NpcManager.Instance.timeUntilAttack = target.GetComponent<Enemigo>().timeUntilAttack;
-            NpcManager.Instance.countdownDuration = target.GetComponent<Enemigo>().countdownDuration;
-            NpcManager.Instance.pumpDuration = target.GetComponent<Enemigo>().pumpDuration;
-            NpcManager.Instance.textoCompleto = target.GetComponent<Enemigo>().textoCompleto;
-            NpcManager.Instance.orSprite = target.GetComponent<Enemigo>().orSprite;
-            NpcManager.Instance.newSprite = target.GetComponent<Enemigo>().newSprite;
         }
     }
 
