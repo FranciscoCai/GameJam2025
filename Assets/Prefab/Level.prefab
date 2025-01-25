@@ -139,7 +139,10 @@ MonoBehaviour:
   stayTime: 15
   SpawnPoint: {fileID: 3770037777995289797}
   Enemy: {fileID: 6219769180113516547, guid: 8ea21cb0814dfcb43bc17821c6bf76db, type: 3}
-  Obstacle: {fileID: 3580970340322050476, guid: aa345036a44ee9445820466202b8e2af, type: 3}
+  Obstacle:
+  - {fileID: 8708514233607495175, guid: 0b095ef7293d884449b90d72e8d06b88, type: 3}
+  - {fileID: 8963927670231990599, guid: c8a98a152b80b58498ad46abeec42e55, type: 3}
+  - {fileID: 3766376428184979036, guid: a4644e06b323a604dbec174dc0102de6, type: 3}
 --- !u!1 &1270621785697448932
 GameObject:
   m_ObjectHideFlags: 0

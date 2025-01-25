@@ -109,7 +109,10 @@ public class Combate : MonoBehaviour
         {
             battleCam.SetActive(false);
         }
-        GameManager.instance.modoAtaque1();
+        if (GameManager.instance.modoAtaque1 != null)
+        {
+            GameManager.instance.modoAtaque1();
+        }
         GameManager.instance.modoAtaque = false;
     }
 }

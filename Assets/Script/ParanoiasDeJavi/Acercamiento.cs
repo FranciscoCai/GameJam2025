@@ -52,7 +52,10 @@ public class Acercamiento : MonoBehaviour
     }
     private IEnumerator FadeCoroutine()
     {
-        GameManager.instance.modoAtaque2();
+        if (GameManager.instance.modoAtaque2 != null)
+        {
+            GameManager.instance.modoAtaque2();
+        }
         Color color = image.color;
         color.a = 0f;
         image.color = color;

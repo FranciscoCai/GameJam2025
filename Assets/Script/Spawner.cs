@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
 
     [Header("SpawnEnemy")]
     [SerializeField] private GameObject Enemy;
-    [SerializeField] private GameObject Obstacle;
+    [SerializeField] private GameObject[] Obstacle;
     public void SpawnLevel()
     {
         if (_levels == null) return;
@@ -34,7 +34,8 @@ public class Spawner : MonoBehaviour
         {
             if (RandomNumber(66))
             {
-                GameObject toInstance = Instantiate(Obstacle, obstacleSpawnPoints[i].transform.position, Quaternion.Euler(0, 180, 0));
+                int randomObstacle = Random.Range(0,Obstacle.Length);
+                GameObject toInstance = Instantiate(Obstacle[randomObstacle], obstacleSpawnPoints[i].transform.position, Quaternion.Euler(0, 180, 0));
                 toInstance.transform.SetParent(gameObject.transform);
             }
         }
