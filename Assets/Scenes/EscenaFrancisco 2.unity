@@ -1234,7 +1234,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 050d36514240ab54a87fc2667cb29845, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1242,7 +1242,7 @@ SpriteRenderer:
   m_Size: {x: 15.46, y: 16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1680032749
@@ -1277,7 +1277,7 @@ MonoBehaviour:
   pumpDuration: 0.7
   actionDuration: 0.05
   pumpScaleFactor: 0.8
-  newSprite: {fileID: 21300000, guid: 594e048aed054f748a170b0af53c2f22, type: 3}
+  newSprite: {fileID: 0}
 --- !u!1001 &1682962616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1496,6 +1496,7 @@ MonoBehaviour:
   timeUntilAttack: 0
   countdownDuration: 0
   pumpDuration: 0
+  textoCompleto: []
 --- !u!4 &2038864057
 Transform:
   m_ObjectHideFlags: 0

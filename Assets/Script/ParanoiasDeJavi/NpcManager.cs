@@ -7,6 +7,9 @@ public class NpcManager : MonoBehaviour
     public float countdownDuration;
     public float pumpDuration;
     public string[] textoCompleto;
+    public Sprite orSprite;
+    public Sprite newSprite;
+
     private void Awake()
     {
         if (Instance == null)

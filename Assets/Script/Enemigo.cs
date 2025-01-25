@@ -15,8 +15,12 @@ public class Enemigo : MonoBehaviour
     public Transform _player;
     private Animator _animator;
     public string[] textoCompleto;
+    [HideInInspector]public Sprite orSprite;
+    public Sprite newSprite;
+
     void Start()
     {
+        orSprite = GetComponent<SpriteRenderer>().sprite;
         _agent = GetComponent<NavMeshAgent>();
         _player = GameObject.FindWithTag("Player").transform;
         _animator = GetComponent<Animator>();

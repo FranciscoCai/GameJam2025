@@ -9,7 +9,7 @@ public class NpcBaile : MonoBehaviour
     public float actionDuration;
     public float pumpScaleFactor;
     private Sprite orSprite;
-    public Sprite newSprite;
+    private Sprite newSprite;
 
     private Vector3 originalScale;
     private SpriteRenderer spriteRenderer;
@@ -19,8 +19,8 @@ public class NpcBaile : MonoBehaviour
         originalScale = transform.localScale;
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        orSprite = spriteRenderer.sprite;
-
+        orSprite = NpcManager.Instance.orSprite;
+        newSprite = NpcManager.Instance.newSprite;
     }
     private void OnEnable()
     {
