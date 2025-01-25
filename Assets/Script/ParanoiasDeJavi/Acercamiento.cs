@@ -77,7 +77,7 @@ public class Acercamiento : MonoBehaviour
 
         if (playerCam != null)
         {
-            battleCam.enabled = false; ;
+            playerCam.enabled = false; ;
         }
 
         while (image.color.a > 0f)
