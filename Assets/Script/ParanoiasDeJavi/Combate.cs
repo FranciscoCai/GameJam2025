@@ -18,10 +18,12 @@ public class Combate : MonoBehaviour
 
     void Start()
     {
-        //GameManager.instance.modoAtaque = true;
+        GameManager.instance.modoAtaque = true;
+    }
+    private void OnEnable()
+    {
         StartCoroutine(StartCombat());
     }
-
     IEnumerator StartCombat()
     {
         while (true) 

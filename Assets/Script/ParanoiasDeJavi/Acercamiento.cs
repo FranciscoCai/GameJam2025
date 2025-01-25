@@ -25,6 +25,7 @@ public class Acercamiento : MonoBehaviour
 
             if (distance <= detectionRange)
             {
+                GameManager.instance.modoAtaque2();
                 StartCoroutine(FadeCoroutine());
             }
         }
