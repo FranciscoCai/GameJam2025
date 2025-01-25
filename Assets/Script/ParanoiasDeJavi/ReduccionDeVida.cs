@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class ReduccionDeVida : MonoBehaviour
 {
@@ -22,6 +23,10 @@ public class ReduccionDeVida : MonoBehaviour
             newWidth = Mathf.Max(newWidth, 0);
 
             imageRect.sizeDelta = new Vector2(newWidth, imageRect.sizeDelta.y);
+            if(newWidth <= 0)
+            {
+                SceneManager.LoadScene("GameOver");
+            }
         }
     }
 }

@@ -1277,7 +1277,6 @@ MonoBehaviour:
   pumpDuration: 0.7
   actionDuration: 0.05
   pumpScaleFactor: 0.8
-  newSprite: {fileID: 0}
 --- !u!1001 &1682962616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1497,6 +1496,8 @@ MonoBehaviour:
   countdownDuration: 0
   pumpDuration: 0
   textoCompleto: []
+  orSprite: {fileID: 0}
+  newSprite: {fileID: 0}
 --- !u!4 &2038864057
 Transform:
   m_ObjectHideFlags: 0
