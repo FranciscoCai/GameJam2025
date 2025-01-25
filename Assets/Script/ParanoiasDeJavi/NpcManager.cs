@@ -6,6 +6,7 @@ public class NpcManager : MonoBehaviour
     public float timeUntilAttack;
     public float countdownDuration;
     public float pumpDuration;
+    public string[] textoCompleto;
     private void Awake()
     {
         if (Instance == null)

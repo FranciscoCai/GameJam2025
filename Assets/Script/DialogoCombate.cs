@@ -12,6 +12,7 @@ public class DialogoCombate : MonoBehaviour
 
     public IEnumerator MostrarTextoPocoAPoco()
     {
+        textoCompleto = NpcManager.Instance.textoCompleto;
         textoUI.text = "";  // Asegurarse de que el texto comience vac¨ªo
         int randomText = Random.Range(0, textoCompleto.Length);
         foreach (char letra in textoCompleto[randomText])

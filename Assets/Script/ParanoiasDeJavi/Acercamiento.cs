@@ -34,6 +34,7 @@ public class Acercamiento : MonoBehaviour
             NpcManager.Instance.timeUntilAttack = target.GetComponent<Enemigo>().timeUntilAttack;
             NpcManager.Instance.countdownDuration = target.GetComponent<Enemigo>().countdownDuration;
             NpcManager.Instance.pumpDuration = target.GetComponent<Enemigo>().pumpDuration;
+            NpcManager.Instance.textoCompleto = target.GetComponent<Enemigo>().textoCompleto;
         }
     }
 
