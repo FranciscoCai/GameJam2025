@@ -46,7 +46,7 @@ public class Spawner : MonoBehaviour
     }
     void Update()
     {
-        if (!_isSpawned) return;
+        if (!_isSpawned || GameManager.instance.modoAtaque) return;
         _elapsedTime += Time.deltaTime;
         if(_elapsedTime > stayTime)
         {

@@ -18,7 +18,6 @@ public class Combate : MonoBehaviour
 
     void Start()
     {
-        GameManager.instance.modoAtaque = true;
     }
     private void OnEnable()
     {
@@ -26,6 +25,7 @@ public class Combate : MonoBehaviour
     }
     IEnumerator StartCombat()
     {
+        GameManager.instance.modoAtaque = true;
         while (true) 
         {
             yield return new WaitForSeconds(timeUntilAttack);
@@ -109,7 +109,7 @@ public class Combate : MonoBehaviour
         {
             battleCam.SetActive(false);
         }
-
+        GameManager.instance.modoAtaque1();
         GameManager.instance.modoAtaque = false;
     }
 }

@@ -10,11 +10,12 @@ public class Enemigo : MonoBehaviour
     EstadoEnemigo eEnemy;
     private NavMeshAgent _agent;
     public Transform _player;
+    private Animator _animator;
     void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
         _player = GameObject.FindWithTag("Player").transform;
-        
+        _animator = GetComponent<Animator>();
     }
     private void OnEnable()
     {
@@ -29,18 +30,17 @@ public class Enemigo : MonoBehaviour
     private void CambioQuieto()
     {
         eEnemy = EstadoEnemigo.Perseguir;
-        gameObject.SetActive(false);
-        Debug.Log("Me Cambio a quieto");
+        _animator.SetTrigger("ToStop");
     }
     private void CambioVolver()
     {
         if(eEnemy == EstadoEnemigo.NoPerseguir)
         {
-            Debug.Log("Me Cambio no perseguir");
+            _animator.SetTrigger("ToWaiting");
         }
         else if(eEnemy == EstadoEnemigo.Perseguir)
             {
-            Debug.Log("Me Cambio perseguir");
+            _animator.SetTrigger("ToMove");
         }
     }
     // Update is called once per frame

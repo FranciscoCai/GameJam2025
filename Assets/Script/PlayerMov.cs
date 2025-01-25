@@ -6,13 +6,14 @@ public class PlayerMov : MonoBehaviour
     public float multiplicadorSprint = 2f;
     public float speedLateral = 3f;
 
+    private Rigidbody rb;
     private CharacterController controller;
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
     }
-
     void Update()
     {
         float currentSpeed = speed;
@@ -33,6 +34,9 @@ public class PlayerMov : MonoBehaviour
         }
 
         Vector3 move = (transform.forward * currentSpeed) + (transform.right * strafe);
+        if (GameManager.instance.modoAtaque)
+        { move = Vector3.zero;
+        }
         controller.Move(move * Time.deltaTime);
     }
 }

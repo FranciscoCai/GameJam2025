@@ -25,8 +25,8 @@ public class Acercamiento : MonoBehaviour
 
             if (distance <= detectionRange)
             {
-                GameManager.instance.modoAtaque2();
                 StartCoroutine(FadeCoroutine());
+                Destroy(target);
             }
         }
     }
@@ -52,6 +52,7 @@ public class Acercamiento : MonoBehaviour
     }
     private IEnumerator FadeCoroutine()
     {
+        GameManager.instance.modoAtaque2();
         Color color = image.color;
         color.a = 0f;
         image.color = color;
