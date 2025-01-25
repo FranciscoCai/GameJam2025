@@ -733,7 +733,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilAttack: 2
   countdownDuration: 2
-  reactionTime: 1
+  reactionTime: 5
+  image: {fileID: 519769543}
+  fadeSpeed: 2
+  playerCam: {fileID: 401637157}
+  battleCam: {fileID: 801573181}
 --- !u!114 &801573187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1225,7 +1229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6318883271302707173, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
       propertyPath: rotationSpeed
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

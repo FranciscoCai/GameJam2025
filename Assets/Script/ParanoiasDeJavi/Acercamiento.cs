@@ -48,11 +48,6 @@ public class Acercamiento : MonoBehaviour
         }
 
         target = closest;
-
-        if (target != null)
-        {
-            Debug.Log("Enemigo más cercano: " + target.name + " a " + minDistance + " unidades.");
-        }
     }
     private IEnumerator FadeCoroutine()
     {

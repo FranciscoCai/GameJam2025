@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Combate : MonoBehaviour
 {
@@ -10,9 +11,14 @@ public class Combate : MonoBehaviour
     private string requiredKey;
     private bool waitingForInput = false;
 
+    public Image image;
+    public float fadeSpeed;
+    public Camera playerCam;
+    public GameObject battleCam;
+
     void Start()
     {
-        GameManager.instance.modoAtaque = true;
+        //GameManager.instance.modoAtaque = true;
         StartCoroutine(StartCombat());
     }
 
@@ -21,22 +27,22 @@ public class Combate : MonoBehaviour
         while (true) 
         {
             yield return new WaitForSeconds(timeUntilAttack);
-            yield return Countdown(); // Inicia la cuenta atrás
+            yield return Countdown();
 
-            // Determina aleatoriamente si la tecla a presionar es "Z" o "X"
             requiredKey = (Random.value > 0.5f) ? "z" : "x";
             Debug.Log("¡Presiona la tecla: " + requiredKey.ToUpper() + "!");
 
             waitingForInput = true;
             float timer = 0f;
 
-            while (timer < reactionTime) // Espera la entrada del jugador
+            while (timer < reactionTime)
             {
                 if (Input.GetKeyDown(requiredKey))
                 {
-                    Debug.Log("✅ ¡Correcto! Pulsaste la tecla correcta.");
+                    Debug.Log("✅ ¡Correcto!");
                     waitingForInput = false;
-                    break;
+                    yield return Return();
+                    yield break;
                 }
                 timer += Time.deltaTime;
                 yield return null;
@@ -44,7 +50,7 @@ public class Combate : MonoBehaviour
 
             if (waitingForInput)
             {
-                Debug.Log("❌ Fallaste. No presionaste la tecla correcta a tiempo.");
+                Debug.Log("❌ Fallaste");
             }
 
             waitingForInput = false;
@@ -63,5 +69,46 @@ public class Combate : MonoBehaviour
         Debug.Log("¡GO!");
     }
 
+    IEnumerator Return()
+    {
+        Color color = image.color;
+        color.a = 0f;
+        image.color = color;
 
+        while (color.a < 1f) // Cambié `<=` por `<` para evitar loops infinitos
+        {
+            color.a += fadeSpeed * Time.deltaTime;
+
+            if (color.a > 1f) // Asegurar que no pase de 1
+                color.a = 1f;
+
+            image.color = color;
+            yield return null;
+        }
+        color.a = 1f;
+        image.color = color;
+
+        if (playerCam != null)
+        {
+            playerCam.enabled = true; ;
+        }
+
+        while (image.color.a > 0f)
+        {
+            color.a -= fadeSpeed * Time.deltaTime;
+            image.color = color;
+            yield return null;
+        }
+
+        color.a = 0f;
+        image.color = color;
+
+        if (battleCam != null)
+        {
+            battleCam.SetActive(false);
+        }
+
+        GameManager.instance.modoAtaque = false;
+    }
 }
+

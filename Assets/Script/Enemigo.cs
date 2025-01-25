@@ -29,6 +29,7 @@ public class Enemigo : MonoBehaviour
     private void CambioQuieto()
     {
         eEnemy = EstadoEnemigo.Perseguir;
+        gameObject.SetActive(false);
         Debug.Log("Me Cambio a quieto");
     }
     private void CambioVolver()
