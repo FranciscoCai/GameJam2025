@@ -2082,37 +2082,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d8d8d033b17183a45ae24d84d5041b24, type: 3}
   m_PrefabInstance: {fileID: 1433297043}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1465620603
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1465620604}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1465620604
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1465620603}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.557751, y: 6.938257, z: -19.17623}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1635700305
 GameObject:
   m_ObjectHideFlags: 0
@@ -2612,6 +2581,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Combat Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 5623183261955343135, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7268464980404051995, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
       propertyPath: image
       value: 
@@ -2672,6 +2645,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8560134793573930883, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
+      propertyPath: m_Size.x
+      value: 17.561134
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560134793573930883, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
+      propertyPath: m_Size.y
+      value: 24.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560134793573930883, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560134793573930883, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2692,4 +2681,3 @@ SceneRoots:
   - {fileID: 2038864057}
   - {fileID: 1791186504}
   - {fileID: 1361689540}
-  - {fileID: 1465620604}

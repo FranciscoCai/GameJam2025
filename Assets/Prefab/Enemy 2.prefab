@@ -76,8 +76,8 @@ MonoBehaviour:
   _player: {fileID: 0}
   textoCompleto:
   - "Dej\xE9 la carrera para ser actriz"
-  - Cierra los ojos y pide un deseo
-  - "No volver\xE9 al asilo!!!"
+  - Vamos a medirnos las manos, a ver
+  - Contigo se puede hablar de todo, eso me encanta
   orSprite: {fileID: 0}
   newSprite: {fileID: 21300000, guid: 9a741811cb32c3045aa0b0e46596c83c, type: 3}
 --- !u!95 &6606841909469170564
