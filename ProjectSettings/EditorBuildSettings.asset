@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EscenaFrancisco 3.unity
     guid: 957e4a16928005948963fcea0fd18895
+  - enabled: 1
+    path: Assets/Scenes/House2.unity
+    guid: bf189eda2eb71e84782881ecd59b27ef
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -5,6 +5,6 @@ public class VolverAlMenu : MonoBehaviour
 {
     public void VolverAlInicio()
     {
-        SceneManager.LoadScene("Casa");
+        SceneManager.LoadScene("House2");
     }
 }
