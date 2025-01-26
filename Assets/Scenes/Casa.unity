@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modoAtaque: 0
-  animator: {fileID: 1504940761}
+  animator: {fileID: 778497198}
   idle: {fileID: 1504940761}
 --- !u!4 &307390873
 Transform:
@@ -786,6 +786,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!95 &778497198 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2016571068741103706, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
+  m_PrefabInstance: {fileID: 1328297403}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &836697036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1280,7 +1285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0c74dac73714b4887642dfd975f8db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Calle
+  sceneName: EscenaFrancisco 2
 --- !u!65 &1054586960
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1296,12 +1301,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.0646111, z: 1.4001408}
+  m_Center: {x: 0, y: 0.0323056, z: -0.20007038}
 --- !u!23 &1054586961
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1741,6 +1746,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2329933594820929112, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
+      propertyPath: targetImage
+      value: 
+      objectReference: {fileID: 1477218111}
     - target: {fileID: 5623183261955343135, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
       propertyPath: m_Name
       value: Combat Camera
@@ -1810,6 +1819,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
+--- !u!114 &1477218111 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1598055040602960797, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+  m_PrefabInstance: {fileID: 1298435817}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294368866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &1504940761 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3559139978961902448, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
