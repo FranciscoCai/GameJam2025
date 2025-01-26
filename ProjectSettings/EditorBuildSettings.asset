@@ -5,12 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Calle.unity
     guid: 4acf5face5fb4874bac11303cadd3666
   - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-    guid: 2f0e0fd1a2de5f5429f3eb9f1ad3a287
+    path: Assets/Scenes/House2.unity
+    guid: bf189eda2eb71e84782881ecd59b27ef
   - enabled: 1
     path: Assets/Scenes/EscenaFrancisco 2.unity
     guid: 31f1521d8db65f14cb7a9b4069be1462
@@ -21,8 +21,8 @@ EditorBuildSettings:
     path: Assets/Scenes/EscenaFrancisco 3.unity
     guid: 957e4a16928005948963fcea0fd18895
   - enabled: 1
-    path: Assets/Scenes/House2.unity
-    guid: bf189eda2eb71e84782881ecd59b27ef
+    path: Assets/Scenes/GameOver.unity
+    guid: 2f0e0fd1a2de5f5429f3eb9f1ad3a287
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
