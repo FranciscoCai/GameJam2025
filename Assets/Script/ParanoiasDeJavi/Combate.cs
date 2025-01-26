@@ -53,6 +53,7 @@ public class Combate : MonoBehaviour
                         isEnter = true;
                         Debug.Log("✅ ¡Correcto!");
                         waitingForInput = false;
+                        yield return new WaitForSeconds(1);
                         yield return Return();
                         yield break;
                     }
