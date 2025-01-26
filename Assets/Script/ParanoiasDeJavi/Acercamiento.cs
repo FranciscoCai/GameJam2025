@@ -48,6 +48,7 @@ public class Acercamiento : MonoBehaviour
                 {
                     AudioManager.Instances.Hablar = target.GetComponent<Enemigo>().Hablar;
                 }
+                AudioManager.Instances.pitch = target.GetComponent<Enemigo>().pitch;
                 Destroy(target);
             }
 

@@ -13,6 +13,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip Hablar;
 
     private AudioSource audioSource;
+
+    public float pitch;
     private void Awake()
     {
         if (Instances == null)
