@@ -79,7 +79,7 @@ MonoBehaviour:
   - Cierra los ojos y pide un deseo
   - "No volver\xE9 al asilo!!!"
   orSprite: {fileID: 0}
-  newSprite: {fileID: 21300000, guid: c0f7bab6cbeb85d4fb8bae95d84bc542, type: 3}
+  newSprite: {fileID: 21300000, guid: f4fa5f6c404b9d545a6d9d96d9a71ea4, type: 3}
 --- !u!95 &6606841909469170564
 Animator:
   serializedVersion: 7
