@@ -13,6 +13,7 @@ public class NpcBaile : MonoBehaviour
 
     private Vector3 originalScale;
     private SpriteRenderer spriteRenderer;
+    public AudioSource bomb;
 
     void Awake()
     {
@@ -51,6 +52,7 @@ public class NpcBaile : MonoBehaviour
 
     IEnumerator PumpEffect()
     {
+        bomb.Play();
         transform.localScale = originalScale * pumpScaleFactor;
         yield return new WaitForSeconds(actionDuration);
         transform.localScale = originalScale;
