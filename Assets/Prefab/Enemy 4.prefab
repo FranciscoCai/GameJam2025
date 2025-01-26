@@ -70,14 +70,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a60b4220e2256e4ab546051c536d9cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeUntilAttack: 1.5
-  countdownDuration: 2
-  pumpDuration: 0.8
+  timeUntilAttack: 1
+  countdownDuration: 1
+  pumpDuration: 0.5
   _player: {fileID: 0}
   textoCompleto:
-  - "4 a\xF1os de artes esc\xE9nicas para esto..."
-  - "Si trabajo 10 a\xF1os m\xE1s, me ascienden a conserge"
-  - "Yo ten\xEDa un futuro"
+  - Guau
+  - Guau
+  - Guau
   orSprite: {fileID: 0}
   newSprite: {fileID: 21300000, guid: 82324a8a57fbe2049b372781049903ad, type: 3}
 --- !u!95 &6606841909469170564

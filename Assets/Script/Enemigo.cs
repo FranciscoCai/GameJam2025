@@ -22,6 +22,8 @@ public class Enemigo : MonoBehaviour
     public AudioClip Dano;
     public AudioClip Hablar;
 
+    public float pitch;
+
     void Start()
     {
         orSprite = GetComponent<SpriteRenderer>().sprite;
