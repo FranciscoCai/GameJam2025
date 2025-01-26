@@ -74,4 +74,8 @@ public class AudioManager : MonoBehaviour
         kazoo.loop = true;
         kazoo.Play();
     }
+    private void Update()
+    {
+        kazoo.pitch = pitch;
+    }
 }

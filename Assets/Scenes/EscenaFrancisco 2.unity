@@ -2257,6 +2257,7 @@ MonoBehaviour:
   Ataque: {fileID: 0}
   Dano: {fileID: 0}
   Hablar: {fileID: 0}
+  pitch: 0
 --- !u!82 &1361689542
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2930,6 +2931,14 @@ PrefabInstance:
     - target: {fileID: 5623183261955343135, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457937290428705132, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457937290428705132, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.59
       objectReference: {fileID: 0}
     - target: {fileID: 7268464980404051995, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
       propertyPath: image
