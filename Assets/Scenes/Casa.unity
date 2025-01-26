@@ -171,7 +171,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d649a3963d8f9d941b436e628c24833b, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: d649a3963d8f9d941b436e628c24833b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -1785,6 +1785,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kazoo: {fileID: 0}
+  Ataque: {fileID: 0}
+  Dano: {fileID: 0}
+  Hablar: {fileID: 0}
+  pitch: 0
 --- !u!4 &1802400303
 Transform:
   m_ObjectHideFlags: 0
@@ -2047,7 +2051,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8a1b1ac75a0d1b642a8844bda8a33e17, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 8a1b1ac75a0d1b642a8844bda8a33e17, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -2194,6 +2198,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e0196efad06227042a3aa34bbc28de12, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a8d7c3ed53865084d85ffcebbbf6856d, type: 2}
     - target: {fileID: 919132149155446097, guid: e0196efad06227042a3aa34bbc28de12, type: 3}
       propertyPath: m_Name
       value: SM_Ordenador
