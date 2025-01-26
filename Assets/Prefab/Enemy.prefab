@@ -72,7 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilAttack: 2
   countdownDuration: 2.5
-  pumpDuration: 0.3
+  pumpDuration: 0.5
   _player: {fileID: 0}
   textoCompleto:
   - Tienes hora?

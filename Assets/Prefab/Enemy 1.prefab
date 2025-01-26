@@ -72,7 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilAttack: 2
   countdownDuration: 2
-  pumpDuration: 0.5
+  pumpDuration: 0.7
   _player: {fileID: 0}
   textoCompleto:
   - Quieres ver un truco de magia?
