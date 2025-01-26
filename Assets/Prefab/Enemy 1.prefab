@@ -71,13 +71,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilAttack: 2
-  countdownDuration: 3
-  pumpDuration: 0.5
+  countdownDuration: 2
+  pumpDuration: 0.7
   _player: {fileID: 0}
   textoCompleto:
-  - Tienes hora?
-  - Amego segarro?
-  - "Yo estudi\xE9 lo mismo que t\xFA"
+  - Quieres ver un truco de magia?
+  - Cierra los ojos y pide un deseo
+  - "No volver\xE9 al asilo!!!"
   orSprite: {fileID: 0}
   newSprite: {fileID: 21300000, guid: c0f7bab6cbeb85d4fb8bae95d84bc542, type: 3}
 --- !u!95 &6606841909469170564
@@ -147,7 +147,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7838fe600ec2d92489e2a46869aca5f0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -168,7 +168,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c53689362d8080e4fb6af2f62f2710dd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8d9a988a91f11e4b98b0431fc6d246c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
