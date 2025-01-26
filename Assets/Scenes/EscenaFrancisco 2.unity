@@ -995,7 +995,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: b7b1dcf9694eb8b469196913a1b3bf42, type: 3}
   m_Resource: {fileID: 8300000, guid: b7b1dcf9694eb8b469196913a1b3bf42, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1770,7 +1770,7 @@ RectTransform:
   m_GameObject: {fileID: 1026099288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.38, y: 0.38, z: 0.38}
+  m_LocalScale: {x: 0.761445, y: 0.761445, z: 0.761445}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1082524725}
@@ -1793,7 +1793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageToFade: {fileID: 0}
-  fadeSpeed: 1
+  fadeSpeed: 1.5
 --- !u!114 &1026099291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1991,7 +1991,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 84d78ef3f4e02fa4c8ef358d058af8c6, type: 3}
   m_Resource: {fileID: 8300000, guid: 84d78ef3f4e02fa4c8ef358d058af8c6, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2103,7 +2103,7 @@ RectTransform:
   m_GameObject: {fileID: 1271216277}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.38, y: 0.38, z: 0.38}
+  m_LocalScale: {x: 0.761445, y: 0.761445, z: 0.761445}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1082524725}
@@ -2126,7 +2126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageToFade: {fileID: 0}
-  fadeSpeed: 1
+  fadeSpeed: 1.5
 --- !u!114 &1271216280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2189,6 +2189,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 6c732d1613a0a544c8454ec5b1e79585, type: 3}
+    - target: {fileID: 1655065115168448686, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2226651798307922149, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.04
@@ -2248,6 +2252,38 @@ PrefabInstance:
     - target: {fileID: 5933502802875417619, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735402605588791407, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: m_text
+      value: hfyh6hfhfh
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735402605588791407, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: m_margin.w
+      value: 11.767605
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735402605588791407, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: m_margin.x
+      value: -3.9225767
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735402605588791407, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: m_margin.y
+      value: 11.767654
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735402605588791407, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735402605588791407, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735402605588791407, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735402605588791407, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294309365
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3002,11 +3038,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6457937290428705132, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.48
+      value: -0.419
       objectReference: {fileID: 0}
     - target: {fileID: 6457937290428705132, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.59
+      value: 2.66
       objectReference: {fileID: 0}
     - target: {fileID: 7268464980404051995, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
       propertyPath: image
@@ -3040,6 +3076,10 @@ PrefabInstance:
       propertyPath: dialogoCombate
       value: 
       objectReference: {fileID: 1067454187}
+    - target: {fileID: 7386300162516517545, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8409145319827278270, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.33
