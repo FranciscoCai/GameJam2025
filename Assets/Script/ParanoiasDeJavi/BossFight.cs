@@ -121,6 +121,9 @@ public class BossFight : MonoBehaviour
         if (vidaGotica == 0)
         {
             SceneManager.LoadScene("EscenaFrancisco 3");
+        } else if (vidaJugador == 0)
+        {
+            SceneManager.LoadScene("GameOver");
         }
     }
 }
