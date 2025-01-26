@@ -1,7 +1,7 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
-public class NpcBaile : MonoBehaviour
+public class BaileGotica : MonoBehaviour
 {
     public float timeUntilAttack;
     public float countdownDuration;
@@ -9,7 +9,7 @@ public class NpcBaile : MonoBehaviour
     public float actionDuration;
     public float pumpScaleFactor;
     private Sprite orSprite;
-    private Sprite newSprite;
+    public Sprite newSprite;
 
     private Vector3 originalScale;
     private SpriteRenderer spriteRenderer;
@@ -20,14 +20,10 @@ public class NpcBaile : MonoBehaviour
     {
         originalScale = transform.localScale;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        orSprite = spriteRenderer.sprite;
     }
     private void OnEnable()
     {
-        timeUntilAttack = NpcManager.Instance.timeUntilAttack;
-        countdownDuration = NpcManager.Instance.countdownDuration;
-        pumpDuration = NpcManager.Instance.pumpDuration;
-        orSprite = NpcManager.Instance.orSprite;
-        newSprite = NpcManager.Instance.newSprite;
         StartCoroutine(CountdownRoutine());
     }
 
@@ -45,10 +41,7 @@ public class NpcBaile : MonoBehaviour
 
             if (spriteRenderer != null && newSprite != null)
             {
-                if (caja != null)
-                {
-                    caja.Play();
-                }
+                caja.Play();
                 spriteRenderer.sprite = newSprite;
             }
             yield return new WaitForSeconds(pumpDuration);
@@ -57,10 +50,6 @@ public class NpcBaile : MonoBehaviour
 
     IEnumerator PumpEffect()
     {
-        if (bomb != null)
-        {
-            bomb.Play();
-        }
         bomb.Play();
         transform.localScale = originalScale * pumpScaleFactor;
         yield return new WaitForSeconds(actionDuration);
