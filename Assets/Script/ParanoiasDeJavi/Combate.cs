@@ -20,6 +20,7 @@ public class Combate : MonoBehaviour
 
     public AudioSource overworld;
     public AudioSource theme;
+    public AudioSource sound;
     
     private void OnEnable()
     {
@@ -87,6 +88,7 @@ public class Combate : MonoBehaviour
         {
             Debug.Log("Cuenta atrás: " + Mathf.Ceil(timer));
             timer -= Time.deltaTime;
+            sound.Play();
             yield return null;
         }
         Debug.Log("¡GO!");
