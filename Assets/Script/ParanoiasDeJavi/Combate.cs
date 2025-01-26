@@ -26,9 +26,6 @@ public class Combate : MonoBehaviour
     public GameObject zButton;
     public GameObject xButton;
 
-    public AudioClip Ataque;
-    public AudioClip Dano;
-    public AudioClip Hablar;
 
     private void Awake()
     {
@@ -59,10 +56,10 @@ public class Combate : MonoBehaviour
         AudioManager.Instances.CrossfadeAudio(overworld, theme, 1.5f, 1.5f);
         dialogoCombate.bocadillo.SetActive(true);
 
-        if(Ataque != null )
+        if(AudioManager.Instances.Hablar != null )
         {
-            AudioManager.Instances.PLayAudio(Ataque);
-            Ataque = null;
+            AudioManager.Instances.PLayAudio(AudioManager.Instances.Hablar);
+            AudioManager.Instances.Hablar = null;
         }
 
         StartCoroutine(dialogoCombate.MostrarTextoPocoAPoco());
@@ -93,6 +90,11 @@ public class Combate : MonoBehaviour
             waitingForInput = true;
             float timer = 0f;
             bool isEnter = false;
+            if (AudioManager.Instances.Ataque != null)
+            {
+                AudioManager.Instances.PLayAudio(AudioManager.Instances.Ataque);
+                AudioManager.Instances.Ataque = null;
+            }
             while (timer < reactionTime)
             {
                 bool cooldown = true;
@@ -142,6 +144,11 @@ public class Combate : MonoBehaviour
 
     IEnumerator Return()
     {
+        if (AudioManager.Instances.Dano != null)
+        {
+            AudioManager.Instances.PLayAudio(AudioManager.Instances.Dano);
+            AudioManager.Instances.Dano = null;
+        }
         AudioManager.Instances.CrossfadeAudio(theme, overworld, 1.5f, 1.5f);
         Color color = image.color;
         color.a = 0f;

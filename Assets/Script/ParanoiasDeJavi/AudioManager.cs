@@ -7,7 +7,14 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instances;
     public AudioSource kazoo;
 
+
+    public AudioClip Ataque;
+    public AudioClip Dano;
+    public AudioClip Hablar;
+
     private AudioSource audioSource;
+
+    public float pitch;
     private void Awake()
     {
         if (Instances == null)
