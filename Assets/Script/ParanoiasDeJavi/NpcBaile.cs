@@ -61,6 +61,7 @@ public class NpcBaile : MonoBehaviour
         {
             bomb.Play();
         }
+        bomb.Play();
         transform.localScale = originalScale * pumpScaleFactor;
         yield return new WaitForSeconds(actionDuration);
         transform.localScale = originalScale;

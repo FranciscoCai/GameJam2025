@@ -28,10 +28,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (animator != null)
-        {
-            animator.SetBool("AtackMode", modoAtaque);
-        }
+        animator.SetBool("AtackMode", modoAtaque);
         if (modoAtaque)
         {
             if (Input.GetKeyDown(KeyCode.X) && puedeActivarx)
@@ -58,10 +55,7 @@ public class GameManager : MonoBehaviour
     IEnumerator EsperarAnimaciony()
     {
         puedeActivary = false;
-        if (animator != null)
-        {
-            animator.SetTrigger("z");
-        }
+        animator.SetTrigger("z");
         yield return new WaitForSeconds(2f);
 
         puedeActivary = true;
@@ -73,10 +67,8 @@ public class GameManager : MonoBehaviour
         {
             float tiempoEspera = Random.Range(5f, 10f);
             yield return new WaitForSeconds(tiempoEspera);
-            if (idle != null)
-            {
-                idle.SetTrigger("Idle");
-            }
+
+            idle.SetTrigger("Idle");
         }
     }
 }

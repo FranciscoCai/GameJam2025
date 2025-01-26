@@ -19,15 +19,12 @@ public class BossFight : MonoBehaviour
     private RectTransform imageRectG;
     public Image barrajugador;
     private RectTransform imageRectP;
-    public GameObject dialogo;
     private void Awake()
     {
         StartCoroutine(StartCombat());
         or.SetActive(false);
         imageRectG = barraGotica.GetComponent<RectTransform>();
         imageRectP = barrajugador.GetComponent<RectTransform>();
-        GameManager.instance.modoAtaque = true;
-        dialogo.SetActive(false);
     }
     IEnumerator StartCombat()
     {
