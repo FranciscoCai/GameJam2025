@@ -75,9 +75,9 @@ MonoBehaviour:
   pumpDuration: 0.2
   _player: {fileID: 0}
   textoCompleto:
-  - Guau
-  - Guau
-  - Guau
+  - El fin se acerca
+  - Contempla, la forma de vida definitiva
+  - Veo tus pecados... y tu historial
   orSprite: {fileID: 0}
   newSprite: {fileID: 21300000, guid: 82324a8a57fbe2049b372781049903ad, type: 3}
   Ataque: {fileID: 0}
