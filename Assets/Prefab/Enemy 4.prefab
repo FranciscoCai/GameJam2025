@@ -80,6 +80,10 @@ MonoBehaviour:
   - Guau
   orSprite: {fileID: 0}
   newSprite: {fileID: 21300000, guid: 82324a8a57fbe2049b372781049903ad, type: 3}
+  Ataque: {fileID: 0}
+  Dano: {fileID: 8300000, guid: ac5b42a38f3f84a438e9fa7e23de0f58, type: 3}
+  Hablar: {fileID: 8300000, guid: f819dc1c25e43944da7935f0e7726ab3, type: 3}
+  pitch: 0
 --- !u!95 &6606841909469170564
 Animator:
   serializedVersion: 7
