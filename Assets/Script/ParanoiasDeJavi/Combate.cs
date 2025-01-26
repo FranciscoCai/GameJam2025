@@ -21,6 +21,9 @@ public class Combate : MonoBehaviour
     public AudioSource overworld;
     public AudioSource theme;
     public AudioSource sound;
+
+    public GameObject zButton;
+    public GameObject xButton;
     
     private void OnEnable()
     {
@@ -43,6 +46,22 @@ public class Combate : MonoBehaviour
 
             requiredKey = (Random.value > 0.5f) ? "z" : "x";
             Debug.Log("¡Presiona la tecla: " + requiredKey.ToUpper() + "!");
+            GameObject imageToActive = zButton;
+            if(requiredKey == "z")
+            {
+                imageToActive = zButton;
+                Debug.Log("z");
+            }
+            else if(requiredKey == "x")
+            {
+                imageToActive = xButton;
+                Debug.Log("x");
+            }
+            Image imageToFade = imageToActive.GetComponent<Image>();
+            imageToActive.SetActive(true);
+            Color color = imageToFade.color;
+            color.a = 1.0f;
+            imageToFade.color = color;
 
             waitingForInput = true;
             float timer = 0f;
