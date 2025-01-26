@@ -72,7 +72,7 @@ public class GiroComienzo : MonoBehaviour
                 textoUI.text += letra;  // Agregar la letra al texto mostrado
                 yield return new WaitForSeconds(tiempoEntreLetras);  // Esperar antes de agregar la siguiente letra
             }
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(3f);
             textoUI.text = "";
         }
         ActivarElementos();
