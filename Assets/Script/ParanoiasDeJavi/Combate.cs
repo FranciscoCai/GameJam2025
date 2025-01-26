@@ -48,7 +48,8 @@ public class Combate : MonoBehaviour
             bool isEnter = false;
             while (timer < reactionTime)
             {
-                if (Input.anyKeyDown)
+                bool cooldown = true;
+                if (Input.anyKeyDown && cooldown)
                 {
                     if (Input.GetKeyDown(requiredKey) && !isEnter)
                     {
@@ -56,7 +57,7 @@ public class Combate : MonoBehaviour
                         AudioManager.Instances.CrossfadeAudio(theme, overworld, 1.5f, 1.5f);
                         Debug.Log("✅ ¡Correcto!");
                         waitingForInput = false;
-                        yield return new WaitForSeconds(1);
+                        yield return new WaitForSeconds(0.7f);
                         yield return Return();
                         yield break;
                     }
