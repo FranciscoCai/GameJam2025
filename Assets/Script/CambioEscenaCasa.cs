@@ -11,4 +11,11 @@ public class CambioEscenaCasa : MonoBehaviour
             SceneManager.LoadScene(sceneName);
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+    }
 }
