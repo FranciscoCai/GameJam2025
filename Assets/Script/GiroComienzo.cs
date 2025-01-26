@@ -12,6 +12,7 @@ public class GiroComienzo : MonoBehaviour
     public TextMeshProUGUI textoUI;
     public GameObject Dialogo;
     public string textoCompleto;
+    public string[] textoCompleto2;
     public float tiempoEntreLetras = 0.1f;  // Tiempo entre cada letra
     private bool CorutinaEmpezado = false;
     void Start()
@@ -58,6 +59,22 @@ public class GiroComienzo : MonoBehaviour
         }
 
         transform.rotation = Quaternion.Euler(0, anguloFinal, 0); // Asegura que llegue al ¨¢ngulo final
+        StartCoroutine(DialogoMadre2());
+    }
+    public IEnumerator DialogoMadre2()
+    {
+        Dialogo.SetActive(true);
+        textoUI.text = "";  // Asegurarse de que el texto comience vac¨ªo
+        for (int i = 0; i < textoCompleto2.Length; i++)
+        {
+            foreach (char letra in textoCompleto2[i])
+            {
+                textoUI.text += letra;  // Agregar la letra al texto mostrado
+                yield return new WaitForSeconds(tiempoEntreLetras);  // Esperar antes de agregar la siguiente letra
+            }
+            yield return new WaitForSeconds(1f);
+            textoUI.text = "";
+        }
         ActivarElementos();
     }
     private void ActivarElementos()
