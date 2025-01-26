@@ -2145,6 +2145,10 @@ PrefabInstance:
       propertyPath: overworld
       value: 
       objectReference: {fileID: 364305836}
+    - target: {fileID: 1497888150025072609, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6c732d1613a0a544c8454ec5b1e79585, type: 3}
     - target: {fileID: 2226651798307922149, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.04
@@ -2185,9 +2189,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2239938092803617930, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 105.3412
+      objectReference: {fileID: 0}
+    - target: {fileID: 2239938092803617930, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 233
+      objectReference: {fileID: 0}
+    - target: {fileID: 2239938092803617930, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 98.38063
+      objectReference: {fileID: 0}
     - target: {fileID: 3724228664889479051, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933502802875417619, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
