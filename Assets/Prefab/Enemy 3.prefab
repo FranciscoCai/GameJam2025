@@ -80,6 +80,9 @@ MonoBehaviour:
   - "Yo ten\xEDa un futuro"
   orSprite: {fileID: 0}
   newSprite: {fileID: 21300000, guid: d7eaac116bbaa74449a757f4e510eea1, type: 3}
+  Ataque: {fileID: 8300000, guid: cef7442b20d293943a2609d546d51756, type: 3}
+  Dano: {fileID: 8300000, guid: 8cb4e385261aaeb4da94bc0810b3616e, type: 3}
+  Hablar: {fileID: 8300000, guid: d7ae88e4c57dd6f4a932361c24b8a1e4, type: 3}
 --- !u!95 &6606841909469170564
 Animator:
   serializedVersion: 7

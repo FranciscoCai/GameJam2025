@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class Combate : MonoBehaviour
 {
+    public static Combate Instance;
     [SerializeField] private float timeUntilAttack;
     [SerializeField] private float countdownDuration;
     [SerializeField] private float reactionTime;
@@ -24,7 +25,26 @@ public class Combate : MonoBehaviour
 
     public GameObject zButton;
     public GameObject xButton;
-    
+
+    public AudioClip Ataque;
+    public AudioClip Dano;
+    public AudioClip Hablar;
+
+    private void Awake()
+    {
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        } 
+    }
+    private void Start()
+    {
+        
+    }
     private void OnEnable()
     {
         timeUntilAttack = NpcManager.Instance.timeUntilAttack;
@@ -38,6 +58,13 @@ public class Combate : MonoBehaviour
         GameManager.instance.modoAtaque = true;
         AudioManager.Instances.CrossfadeAudio(overworld, theme, 1.5f, 1.5f);
         dialogoCombate.bocadillo.SetActive(true);
+
+        if(Ataque != null )
+        {
+            AudioManager.Instances.PLayAudio(Ataque);
+            Ataque = null;
+        }
+
         StartCoroutine(dialogoCombate.MostrarTextoPocoAPoco());
         while (true) 
         {

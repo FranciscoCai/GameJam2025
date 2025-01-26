@@ -80,6 +80,9 @@ MonoBehaviour:
   - "Yo estudi\xE9 lo mismo que t\xFA"
   orSprite: {fileID: 0}
   newSprite: {fileID: 21300000, guid: c0f7bab6cbeb85d4fb8bae95d84bc542, type: 3}
+  Ataque: {fileID: 8300000, guid: 871207d911cc40b48b3c29e6f9687f7f, type: 3}
+  Dano: {fileID: 8300000, guid: 98a10539f50e4b0419e47ff6a5fe3e1c, type: 3}
+  Hablar: {fileID: 8300000, guid: 9d32d4f65b2bd944ebb81ec44d7a0e95, type: 3}
 --- !u!95 &6606841909469170564
 Animator:
   serializedVersion: 7

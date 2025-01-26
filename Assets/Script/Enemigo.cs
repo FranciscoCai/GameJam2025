@@ -18,6 +18,10 @@ public class Enemigo : MonoBehaviour
     [HideInInspector]public Sprite orSprite;
     public Sprite newSprite;
 
+    public AudioClip Ataque;
+    public AudioClip Dano;
+    public AudioClip Hablar;
+
     void Start()
     {
         orSprite = GetComponent<SpriteRenderer>().sprite;

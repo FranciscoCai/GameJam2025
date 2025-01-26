@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instances;
     public AudioSource kazoo;
 
+    private AudioSource audioSource;
     private void Awake()
     {
         if (Instances == null)
@@ -17,8 +18,13 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
-
+    public void PLayAudio(AudioClip audioClip)
+    {
+        audioSource.clip = audioClip;
+        audioSource.Play();
+    }
     public void CrossfadeAudio(AudioSource fromAudio, AudioSource toAudio, float fadeOutSpeed, float fadeInSpeed)
     {
         StartCoroutine(FadeOutIn(fromAudio, toAudio, fadeOutSpeed, fadeInSpeed));
