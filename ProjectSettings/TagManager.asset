@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Enemigo
+  - Overworld
+  - theme1
+  - theme2
+  - theme3
   layers:
   - Default
   - TransparentFX

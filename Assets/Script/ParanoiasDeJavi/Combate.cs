@@ -26,11 +26,13 @@ public class Combate : MonoBehaviour
         timeUntilAttack = NpcManager.Instance.timeUntilAttack;
         countdownDuration = NpcManager.Instance.countdownDuration;
         reactionTime = NpcManager.Instance.pumpDuration;
+        //theme = NpcManager.Instance.sountrack;
         StartCoroutine(StartCombat());
     }
     IEnumerator StartCombat()
     {
         GameManager.instance.modoAtaque = true;
+        AudioManager.Instances.CrossfadeAudio(overworld, theme, 1.5f, 1.5f);
         dialogoCombate.bocadillo.SetActive(true);
         StartCoroutine(dialogoCombate.MostrarTextoPocoAPoco());
         while (true) 
@@ -51,6 +53,7 @@ public class Combate : MonoBehaviour
                     if (Input.GetKeyDown(requiredKey) && !isEnter)
                     {
                         isEnter = true;
+                        AudioManager.Instances.CrossfadeAudio(theme, overworld, 1.5f, 1.5f);
                         Debug.Log("✅ ¡Correcto!");
                         waitingForInput = false;
                         yield return new WaitForSeconds(1);
