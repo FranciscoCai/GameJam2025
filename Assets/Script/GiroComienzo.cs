@@ -13,6 +13,7 @@ public class GiroComienzo : MonoBehaviour
     public GameObject Dialogo;
     public string textoCompleto;
     public float tiempoEntreLetras = 0.1f;  // Tiempo entre cada letra
+    private bool CorutinaEmpezado = false;
     void Start()
     {
 
@@ -24,13 +25,15 @@ public class GiroComienzo : MonoBehaviour
         
     }
     public void EmpezarCorutina()
-    {
+    {if(CorutinaEmpezado) { return; }
+    CorutinaEmpezado=true;
         StartCoroutine(DialogoMadre());
     }
     public IEnumerator DialogoMadre()
     {
         Dialogo.SetActive(true);
         textoUI.text = "";  // Asegurarse de que el texto comience vac¨ªo
+        play.SetActive(false);
         foreach (char letra in textoCompleto)
         {
             textoUI.text += letra;  // Agregar la letra al texto mostrado
@@ -45,7 +48,6 @@ public class GiroComienzo : MonoBehaviour
         float tiempoDeRotacion = 1f; // Tiempo que tarda en rotar
 
         float tiempoTranscurrido = 0;
-        play.SetActive(false);
         while (tiempoTranscurrido < tiempoDeRotacion)
         {
             float anguloActual = Mathf.Lerp(anguloInicial, anguloFinal, tiempoTranscurrido / tiempoDeRotacion);

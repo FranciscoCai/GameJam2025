@@ -159,6 +159,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modoAtaque: 0
+  animator: {fileID: 0}
+  idle: {fileID: 0}
 --- !u!4 &307390873
 Transform:
   m_ObjectHideFlags: 0
@@ -800,6 +802,8 @@ MonoBehaviour:
   playerCam: {fileID: 401637157}
   battleCam: {fileID: 801573181}
   dialogoCombate: {fileID: 157442506}
+  overworld: {fileID: 0}
+  theme: {fileID: 0}
 --- !u!114 &801573187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1676,7 +1680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2226651798307922149, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: 2226651798307922149, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2333,6 +2337,10 @@ PrefabInstance:
     - target: {fileID: 6219769180113516547, guid: 8ea21cb0814dfcb43bc17821c6bf76db, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100507376804392118, guid: 8ea21cb0814dfcb43bc17821c6bf76db, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.31
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
