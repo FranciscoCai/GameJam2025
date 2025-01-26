@@ -105,7 +105,6 @@ public class Combate : MonoBehaviour
         float timer = countdownDuration;
         while (timer > 0)
         {
-            sound.Play();
             Debug.Log("Cuenta atrás: " + Mathf.Ceil(timer));
             timer -= Time.deltaTime;
             
