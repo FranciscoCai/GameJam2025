@@ -72,7 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilAttack: 2
   countdownDuration: 2
-  pumpDuration: 0.7
+  pumpDuration: 0.5
   _player: {fileID: 0}
   textoCompleto:
   - Quieres ver un truco de magia?
@@ -83,6 +83,7 @@ MonoBehaviour:
   Ataque: {fileID: 8300000, guid: 65e273fa3bf0c864388bd1f7efc45816, type: 3}
   Dano: {fileID: 8300000, guid: 056d76b8ffe522d479950ba70c596cc4, type: 3}
   Hablar: {fileID: 8300000, guid: a0622ac1a80b85d42915ef70734134e5, type: 3}
+  pitch: 1.4
 --- !u!95 &6606841909469170564
 Animator:
   serializedVersion: 7

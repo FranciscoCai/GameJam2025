@@ -136,7 +136,6 @@ public class Combate : MonoBehaviour
         {
             Debug.Log("Cuenta atrás: " + Mathf.Ceil(timer));
             timer -= Time.deltaTime;
-            
             yield return null;
         }
         Debug.Log("¡GO!");

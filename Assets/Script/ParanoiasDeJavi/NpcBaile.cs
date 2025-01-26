@@ -45,7 +45,10 @@ public class NpcBaile : MonoBehaviour
 
             if (spriteRenderer != null && newSprite != null)
             {
-                caja.Play();
+                if (caja != null)
+                {
+                    caja.Play();
+                }
                 spriteRenderer.sprite = newSprite;
             }
             yield return new WaitForSeconds(pumpDuration);
@@ -54,7 +57,10 @@ public class NpcBaile : MonoBehaviour
 
     IEnumerator PumpEffect()
     {
-        bomb.Play();
+        if (bomb != null)
+        {
+            bomb.Play();
+        }
         transform.localScale = originalScale * pumpScaleFactor;
         yield return new WaitForSeconds(actionDuration);
         transform.localScale = originalScale;

@@ -72,7 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilAttack: 2
   countdownDuration: 2.5
-  pumpDuration: 0.5
+  pumpDuration: 0.3
   _player: {fileID: 0}
   textoCompleto:
   - Tienes hora?
@@ -83,6 +83,7 @@ MonoBehaviour:
   Ataque: {fileID: 8300000, guid: 871207d911cc40b48b3c29e6f9687f7f, type: 3}
   Dano: {fileID: 8300000, guid: 98a10539f50e4b0419e47ff6a5fe3e1c, type: 3}
   Hablar: {fileID: 8300000, guid: 9d32d4f65b2bd944ebb81ec44d7a0e95, type: 3}
+  pitch: 1
 --- !u!95 &6606841909469170564
 Animator:
   serializedVersion: 7
