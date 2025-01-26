@@ -1303,10 +1303,11 @@ MonoBehaviour:
   Dialogo: {fileID: 595181636}
   textoCompleto: "Jes\xFAs ve a comprar pan"
   textoCompleto2:
-  - 121223131121
-  - asdaddadqwd
-  - 13221313
-  - adadadaw
+  - "Ay hijo todo el d\xEDa con el jueguito, sal de tu burbuja a que te de el aire."
+  - "Si se te acerca alguien raro en la calle, ign\xF3ralo con el m\xF3vil (Z) "
+  - o bebe algo para calmarte (X)
+  - "Asi que dale, que ya casi est\xE1 la comida, date prisa, no te entretengas con
+    nadie."
   tiempoEntreLetras: 0.1
 --- !u!114 &1581311434 stripped
 MonoBehaviour:
