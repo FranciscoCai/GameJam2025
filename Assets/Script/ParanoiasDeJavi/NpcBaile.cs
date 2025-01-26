@@ -14,7 +14,10 @@ public class NpcBaile : MonoBehaviour
     private Vector3 originalScale;
     private SpriteRenderer spriteRenderer;
     public AudioSource bomb;
+<<<<<<< Updated upstream
     public AudioSource caja;
+=======
+>>>>>>> Stashed changes
 
     void Awake()
     {
@@ -57,10 +60,14 @@ public class NpcBaile : MonoBehaviour
 
     IEnumerator PumpEffect()
     {
+<<<<<<< Updated upstream
         if (bomb != null)
         {
             bomb.Play();
         }
+=======
+        bomb.Play();
+>>>>>>> Stashed changes
         transform.localScale = originalScale * pumpScaleFactor;
         yield return new WaitForSeconds(actionDuration);
         transform.localScale = originalScale;
