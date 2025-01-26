@@ -1,9 +1,11 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instances;
+    public AudioSource kazoo;
 
     private void Awake()
     {
@@ -52,8 +54,11 @@ public class AudioManager : MonoBehaviour
         fromAudio.Stop(); // Detener el audio antiguo cuando ya no se escucha
     }
 
-    public void playAudio(AudioSource clip)
+    public void ReproducirMusicaDeBatalla(AudioClip clip, float pitch)
     {
-        clip.Play();
+        kazoo.clip = clip;
+        kazoo.pitch = pitch;
+        kazoo.loop = true;
+        kazoo.Play();
     }
 }

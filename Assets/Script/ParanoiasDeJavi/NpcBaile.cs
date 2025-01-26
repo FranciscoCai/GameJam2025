@@ -14,6 +14,7 @@ public class NpcBaile : MonoBehaviour
     private Vector3 originalScale;
     private SpriteRenderer spriteRenderer;
     public AudioSource bomb;
+    public AudioSource caja;
 
     void Awake()
     {
@@ -44,6 +45,7 @@ public class NpcBaile : MonoBehaviour
 
             if (spriteRenderer != null && newSprite != null)
             {
+                caja.Play();
                 spriteRenderer.sprite = newSprite;
             }
             yield return new WaitForSeconds(pumpDuration);

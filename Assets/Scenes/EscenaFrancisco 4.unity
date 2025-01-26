@@ -345,7 +345,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8a1b1ac75a0d1b642a8844bda8a33e17, type: 3}
   m_Resource: {fileID: 8300000, guid: 8a1b1ac75a0d1b642a8844bda8a33e17, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2264,8 +2264,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d649a3963d8f9d941b436e628c24833b, type: 3}
-  m_Resource: {fileID: 8300000, guid: d649a3963d8f9d941b436e628c24833b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: bbdc896204001ff4aa8e8ab2968b30f9, type: 3}
+  m_Resource: {fileID: 8300000, guid: bbdc896204001ff4aa8e8ab2968b30f9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2589,6 +2589,10 @@ PrefabInstance:
       propertyPath: image
       value: 
       objectReference: {fileID: 590781093}
+    - target: {fileID: 7268464980404051995, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 1269271116}
     - target: {fileID: 7268464980404051995, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
       propertyPath: theme
       value: 
