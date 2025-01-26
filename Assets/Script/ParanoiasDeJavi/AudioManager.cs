@@ -29,8 +29,11 @@ public class AudioManager : MonoBehaviour
     }
     public void PLayAudio(AudioClip audioClip)
     {
-        audioSource.clip = audioClip;
-        audioSource.Play();
+        if (audioSource != null)
+        {
+            audioSource.clip = audioClip;
+            audioSource.Play();
+        }
     }
     public void CrossfadeAudio(AudioSource fromAudio, AudioSource toAudio, float fadeOutSpeed, float fadeInSpeed)
     {
@@ -76,6 +79,10 @@ public class AudioManager : MonoBehaviour
     }
     private void Update()
     {
+        if(kazoo != null)
+        {
         kazoo.pitch = pitch;
+        }
+
     }
 }
