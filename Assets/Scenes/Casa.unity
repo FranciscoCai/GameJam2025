@@ -1140,6 +1140,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 401637157}
     - target: {fileID: 7268464980404051995, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
+      propertyPath: reactionTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268464980404051995, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
       propertyPath: dialogoCombate
       value: 
       objectReference: {fileID: 157442506}
