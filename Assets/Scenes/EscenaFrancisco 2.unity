@@ -166,10 +166,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: af98ba96f0ab5c247b55b8596750841c, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 8c41d52e423ac434d92e79342f063c29, type: 2}
     - target: {fileID: 919132149155446097, guid: af98ba96f0ab5c247b55b8596750841c, type: 3}
       propertyPath: m_Name
       value: SM_Edificio1 (4)
@@ -244,10 +240,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: ff862145e2624364888e4025b5d311d4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 7953d7ef03440ca478c63f3bd91aadb9, type: 2}
     - target: {fileID: 919132149155446097, guid: ff862145e2624364888e4025b5d311d4, type: 3}
       propertyPath: m_Name
       value: Suelo_HP_04 (5)
@@ -750,10 +742,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: d8d8d033b17183a45ae24d84d5041b24, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 2b138a520281f164585ccceca35708c5, type: 2}
     - target: {fileID: 919132149155446097, guid: d8d8d033b17183a45ae24d84d5041b24, type: 3}
       propertyPath: m_Name
       value: SM_Edificio3 (5)
@@ -861,10 +849,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 932acd75e9c16e0459c856cba662b34a, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 7953d7ef03440ca478c63f3bd91aadb9, type: 2}
     - target: {fileID: 919132149155446097, guid: 932acd75e9c16e0459c856cba662b34a, type: 3}
       propertyPath: m_Name
       value: Suelo_HP_03 (4)
@@ -927,10 +911,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 69bb38e5868717c468c6f84785a11323, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 6fdea428cdb93fc40986ef122fb8b9e6, type: 2}
     - target: {fileID: 919132149155446097, guid: 69bb38e5868717c468c6f84785a11323, type: 3}
       propertyPath: m_Name
       value: SM_Edificio2 (3)
@@ -1436,10 +1416,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: ac8e9ddd1b4c6b442a7361cbd3bc13c9, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 7953d7ef03440ca478c63f3bd91aadb9, type: 2}
     - target: {fileID: 919132149155446097, guid: ac8e9ddd1b4c6b442a7361cbd3bc13c9, type: 3}
       propertyPath: m_Name
       value: Suelo_HP_02 (4)
@@ -1514,10 +1490,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: ac8e9ddd1b4c6b442a7361cbd3bc13c9, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 7953d7ef03440ca478c63f3bd91aadb9, type: 2}
     - target: {fileID: 919132149155446097, guid: ac8e9ddd1b4c6b442a7361cbd3bc13c9, type: 3}
       propertyPath: m_Name
       value: Suelo_HP_02 (3)
@@ -1580,10 +1552,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: af98ba96f0ab5c247b55b8596750841c, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 8c41d52e423ac434d92e79342f063c29, type: 2}
     - target: {fileID: 919132149155446097, guid: af98ba96f0ab5c247b55b8596750841c, type: 3}
       propertyPath: m_Name
       value: SM_Edificio1 (3)
@@ -1646,10 +1614,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: d8d8d033b17183a45ae24d84d5041b24, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 2b138a520281f164585ccceca35708c5, type: 2}
     - target: {fileID: 919132149155446097, guid: d8d8d033b17183a45ae24d84d5041b24, type: 3}
       propertyPath: m_Name
       value: SM_Edificio3 (4)
@@ -1724,10 +1688,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: ff862145e2624364888e4025b5d311d4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 7953d7ef03440ca478c63f3bd91aadb9, type: 2}
     - target: {fileID: 919132149155446097, guid: ff862145e2624364888e4025b5d311d4, type: 3}
       propertyPath: m_Name
       value: Suelo_HP_04 (4)
@@ -2185,10 +2145,6 @@ PrefabInstance:
       propertyPath: overworld
       value: 
       objectReference: {fileID: 364305836}
-    - target: {fileID: 1497888150025072609, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6c732d1613a0a544c8454ec5b1e79585, type: 3}
     - target: {fileID: 2226651798307922149, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.04
@@ -2229,25 +2185,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2239938092803617930, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 105.3412
-      objectReference: {fileID: 0}
-    - target: {fileID: 2239938092803617930, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 233
-      objectReference: {fileID: 0}
-    - target: {fileID: 2239938092803617930, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 98.38063
-      objectReference: {fileID: 0}
     - target: {fileID: 3724228664889479051, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5933502802875417619, guid: 318879d0964b3814c9809f814ed1f72b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2317,7 +2257,6 @@ MonoBehaviour:
   Ataque: {fileID: 0}
   Dano: {fileID: 0}
   Hablar: {fileID: 0}
-  pitch: 0
 --- !u!82 &1361689542
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2475,10 +2414,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 932acd75e9c16e0459c856cba662b34a, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 7953d7ef03440ca478c63f3bd91aadb9, type: 2}
     - target: {fileID: 919132149155446097, guid: 932acd75e9c16e0459c856cba662b34a, type: 3}
       propertyPath: m_Name
       value: Suelo_HP_03 (5)
@@ -2546,10 +2481,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: d8d8d033b17183a45ae24d84d5041b24, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 2b138a520281f164585ccceca35708c5, type: 2}
     - target: {fileID: 919132149155446097, guid: d8d8d033b17183a45ae24d84d5041b24, type: 3}
       propertyPath: m_Name
       value: SM_Edificio3 (6)
@@ -2999,14 +2930,6 @@ PrefabInstance:
     - target: {fileID: 5623183261955343135, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6457937290428705132, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 6457937290428705132, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.59
       objectReference: {fileID: 0}
     - target: {fileID: 7268464980404051995, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
       propertyPath: image

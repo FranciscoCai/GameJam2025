@@ -72,7 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilAttack: 1.5
   countdownDuration: 2
-  pumpDuration: 0.4
+  pumpDuration: 0.8
   _player: {fileID: 0}
   textoCompleto:
   - "4 a\xF1os de artes esc\xE9nicas para esto..."
@@ -83,7 +83,6 @@ MonoBehaviour:
   Ataque: {fileID: 8300000, guid: cef7442b20d293943a2609d546d51756, type: 3}
   Dano: {fileID: 8300000, guid: 8cb4e385261aaeb4da94bc0810b3616e, type: 3}
   Hablar: {fileID: 8300000, guid: d7ae88e4c57dd6f4a932361c24b8a1e4, type: 3}
-  pitch: 1.8
 --- !u!95 &6606841909469170564
 Animator:
   serializedVersion: 7

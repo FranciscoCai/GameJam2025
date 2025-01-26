@@ -171,7 +171,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d649a3963d8f9d941b436e628c24833b, type: 3}
   m_Resource: {fileID: 8300000, guid: d649a3963d8f9d941b436e628c24833b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -1140,10 +1140,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 401637157}
     - target: {fileID: 7268464980404051995, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
-      propertyPath: reactionTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7268464980404051995, guid: ab44b1f94891fe64994daedec0534ada, type: 3}
       propertyPath: dialogoCombate
       value: 
       objectReference: {fileID: 157442506}
@@ -1307,11 +1303,10 @@ MonoBehaviour:
   Dialogo: {fileID: 595181636}
   textoCompleto: "Jes\xFAs ve a comprar pan"
   textoCompleto2:
-  - "Ay hijo todo el d\xEDa con el jueguito, sal de tu burbuja a que te de el aire."
-  - "Si se te acerca alguien raro en la calle, ign\xF3ralo con el m\xF3vil (Z) "
-  - o bebe algo para calmarte (X)
-  - "Asi que dale, que ya casi est\xE1 la comida, date prisa, no te entretengas con
-    nadie."
+  - 121223131121
+  - asdaddadqwd
+  - 13221313
+  - adadadaw
   tiempoEntreLetras: 0.1
 --- !u!114 &1581311434 stripped
 MonoBehaviour:
@@ -1790,10 +1785,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kazoo: {fileID: 0}
-  Ataque: {fileID: 0}
-  Dano: {fileID: 0}
-  Hablar: {fileID: 0}
-  pitch: 0
 --- !u!4 &1802400303
 Transform:
   m_ObjectHideFlags: 0
@@ -2056,7 +2047,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8a1b1ac75a0d1b642a8844bda8a33e17, type: 3}
   m_Resource: {fileID: 8300000, guid: 8a1b1ac75a0d1b642a8844bda8a33e17, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -2143,7 +2134,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-<<<<<<< Updated upstream
 --- !u!1001 &1866511886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2204,10 +2194,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: e0196efad06227042a3aa34bbc28de12, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: a8d7c3ed53865084d85ffcebbbf6856d, type: 2}
     - target: {fileID: 919132149155446097, guid: e0196efad06227042a3aa34bbc28de12, type: 3}
       propertyPath: m_Name
       value: SM_Ordenador
@@ -2217,8 +2203,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0196efad06227042a3aa34bbc28de12, type: 3}
-=======
->>>>>>> Stashed changes
 --- !u!1 &1960684029
 GameObject:
   m_ObjectHideFlags: 0
@@ -2322,7 +2306,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
-<<<<<<< Updated upstream
 --- !u!1001 &2027054035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2396,8 +2379,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8284da5df94fb984cb697d487ac307b0, type: 3}
-=======
->>>>>>> Stashed changes
 --- !u!1 &2106415121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2463,10 +2444,7 @@ SceneRoots:
   - {fileID: 1328297403}
   - {fileID: 1802400303}
   - {fileID: 1960684033}
-<<<<<<< Updated upstream
   - {fileID: 2027054035}
   - {fileID: 1572438295}
   - {fileID: 1764036433}
   - {fileID: 1866511886}
-=======
->>>>>>> Stashed changes

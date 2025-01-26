@@ -34,9 +34,8 @@ public class PlayerMov : MonoBehaviour
         }
 
         Vector3 move = (transform.forward * currentSpeed) + (transform.right * strafe);
-        if(GameManager.instance.modoAtaque)
-        {
-            move = Vector3.zero;
+        if (GameManager.instance.modoAtaque)
+        { move = Vector3.zero;
         }
         controller.Move(move * Time.deltaTime);
     }

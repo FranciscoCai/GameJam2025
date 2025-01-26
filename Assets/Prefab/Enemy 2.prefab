@@ -72,7 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilAttack: 1
   countdownDuration: 3
-  pumpDuration: 0.4
+  pumpDuration: 0.6
   _player: {fileID: 0}
   textoCompleto:
   - "Dej\xE9 la carrera para ser actriz"
@@ -83,7 +83,6 @@ MonoBehaviour:
   Ataque: {fileID: 0}
   Dano: {fileID: 8300000, guid: 43d28afda26aa1e46a13ad4ad53b6ac4, type: 3}
   Hablar: {fileID: 8300000, guid: 5db780f740bed8a4589e21967cbabe2b, type: 3}
-  pitch: 0.7
 --- !u!95 &6606841909469170564
 Animator:
   serializedVersion: 7

@@ -64,10 +64,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2c35f8a2a5a34fc499356c046a1d52bb, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: dee9f43787e2bd5409a7d640c5e45d4e, type: 2}
     - target: {fileID: 919132149155446097, guid: 2c35f8a2a5a34fc499356c046a1d52bb, type: 3}
       propertyPath: m_Name
       value: SM_Cartel
