@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8179368276870213193}
   - component: {fileID: 835615067228742362}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Enemy 2
   m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,16 +70,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a60b4220e2256e4ab546051c536d9cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeUntilAttack: 2
-  countdownDuration: 2.5
-  pumpDuration: 0.5
+  timeUntilAttack: 1
+  countdownDuration: 3
+  pumpDuration: 0.6
   _player: {fileID: 0}
   textoCompleto:
-  - Tienes hora?
-  - Amego segarro?
-  - "Yo estudi\xE9 lo mismo que t\xFA"
+  - "Dej\xE9 la carrera para ser actriz"
+  - Cierra los ojos y pide un deseo
+  - "No volver\xE9 al asilo!!!"
   orSprite: {fileID: 0}
-  newSprite: {fileID: 21300000, guid: c0f7bab6cbeb85d4fb8bae95d84bc542, type: 3}
+  newSprite: {fileID: 21300000, guid: 9a741811cb32c3045aa0b0e46596c83c, type: 3}
 --- !u!95 &6606841909469170564
 Animator:
   serializedVersion: 7
@@ -168,7 +168,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c53689362d8080e4fb6af2f62f2710dd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8b7b58a2e53f8f84889b0ee066ade4b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
