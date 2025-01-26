@@ -2,6 +2,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BossFight : MonoBehaviour
 {
@@ -113,5 +114,13 @@ public class BossFight : MonoBehaviour
             yield return null;
         }
         Debug.Log("¡GO!");
+    }
+
+    private void Update()
+    {
+        if (vidaGotica == 0)
+        {
+            SceneManager.LoadScene("EscenaFrancisco 3");
+        }
     }
 }
